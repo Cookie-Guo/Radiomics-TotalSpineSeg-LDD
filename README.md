@@ -7,7 +7,7 @@ This repository contains the complete source code and workflow for the study:
 
 - **Efficiency**: Automated segmentation via **TotalSpineSeg** processed 210 cases in **24 minutes (6.9s/case)**.
 - **Reproducibility**: **99.3%** of extracted features showed excellent reproducibility (**ICC > 0.75**).
-- - **Optimal Performance**: The **CatBoost** model achieved a macro-averaged **AUC of 0.932** (95% CI: 0.906–0.955).
+- **Optimal Performance**: The **CatBoost** model achieved a macro-averaged **AUC of 0.932** (95% CI: 0.906–0.955).
 - **Explainability**: SHAP analysis identified **10th Percentile**, **Sphericity**, and **Difference Entropy** as key imaging biomarkers.
 
 ##  Repository Structure
