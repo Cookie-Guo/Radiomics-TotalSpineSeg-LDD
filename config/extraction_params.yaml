@@ -1,0 +1,134 @@
+# =============================================================================
+# PyRadiomics Feature Extraction Parameters
+# =============================================================================
+# 
+# This configuration file defines settings for radiomics feature extraction
+# using PyRadiomics. Adjust parameters according to your imaging modality
+# and research requirements.
+#
+# Documentation: https://pyradiomics.readthedocs.io/
+#
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Image Types (Filters)
+# -----------------------------------------------------------------------------
+# Define which image types/filters to apply before feature extraction.
+# Each filter can have its own parameters.
+
+imageType:
+  # Original image (no filter applied)
+  Original: {}
+  
+  # Laplacian of Gaussian (LoG) - edge enhancement at different scales
+  # sigma: controls the scale of the filter (in mm)
+  # Smaller sigma = fine textures, larger sigma = coarse textures
+  LoG:
+    sigma: [3.0, 4.0, 5.0]
+    binWidth: 10
+  
+  # Wavelet decomposition - multi-resolution analysis
+  # Decomposes image into 8 sub-bands (LLL, LLH, LHL, LHH, HLL, HLH, HHL, HHH)
+  Wavelet: {}
+  
+  # Intensity transformations
+  Square: {}
+  SquareRoot: {}
+  Logarithm: {}
+  Exponential: {}
+  
+  # Gradient magnitude
+  Gradient: {}
+  
+  # Local Binary Pattern 3D - texture descriptor
+  LBP3D: {}
+
+# -----------------------------------------------------------------------------
+# Feature Classes
+# -----------------------------------------------------------------------------
+# Define which feature classes to extract.
+# Leave empty {} to extract all features from that class.
+# Or specify individual features as a list.
+
+featureClass:
+  # Shape-based features (3D morphological descriptors)
+  # Note: Compactness1, Compactness2, SphericalDisproportion are disabled by default
+  shape:
+  
+  # First-order statistics (intensity histogram features)
+  firstorder:
+  
+  # Gray Level Co-occurrence Matrix (texture)
+  glcm:
+  
+  # Gray Level Run Length Matrix (texture)
+  glrlm:
+  
+  # Gray Level Size Zone Matrix (texture)
+  glszm:
+  
+  # Gray Level Dependence Matrix (texture)
+  gldm:
+
+# -----------------------------------------------------------------------------
+# General Settings
+# -----------------------------------------------------------------------------
+
+setting:
+  # ---------------------------------------------------------------------------
+  # Normalization
+  # ---------------------------------------------------------------------------
+  # Recommended for MRI (variable intensity scales)
+  # For CT, usually not needed (HU values are standardized)
+  normalize: true
+  normalizeScale: 500  # Scale factor after normalization
+  
+  # ---------------------------------------------------------------------------
+  # Resampling
+  # ---------------------------------------------------------------------------
+  # Resample images to isotropic voxel spacing for consistent feature extraction
+  # Adjust based on your original image resolution
+  interpolator: 'sitkBSpline'  # Options: sitkNearestNeighbor, sitkLinear, sitkBSpline
+  resampledPixelSpacing: [1, 1, 1]  # Target spacing in mm [x, y, z]
+  
+  # Extra padding for LoG filtered images with large sigma values
+  padDistance: 10
+  
+  # ---------------------------------------------------------------------------
+  # Mask Validation
+  # ---------------------------------------------------------------------------
+  # Uncomment to enforce minimum ROI size
+  # minimumROIDimensions: 2
+  # minimumROISize: 50
+  
+  # ---------------------------------------------------------------------------
+  # Discretization (Binning)
+  # ---------------------------------------------------------------------------
+  # Controls the number of intensity bins for texture features
+  # Typical range: 16-128 bins
+  # binWidth = (max_intensity - min_intensity) / number_of_bins
+  binWidth: 25
+  
+  # ---------------------------------------------------------------------------
+  # Label Settings
+  # ---------------------------------------------------------------------------
+  # Default label value in mask (can be overridden in code)
+  label: 1
+
+# =============================================================================
+# Notes for Different Imaging Modalities
+# =============================================================================
+#
+# CT Images:
+# - normalize: false (HU values are standardized)
+# - Consider voxelArrayShift: 1000 (to handle negative HU values)
+#
+# MRI Images:
+# - normalize: true (intensity values vary between scanners)
+# - normalizeScale: 100-1000 (experiment to find optimal)
+#
+# PET Images:
+# - normalize: true or false (depends on standardization method)
+# - Consider SUV normalization before extraction
+#
+# =============================================================================
