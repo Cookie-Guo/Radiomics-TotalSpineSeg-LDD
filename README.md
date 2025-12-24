@@ -15,7 +15,7 @@ This repository contains the complete source code and workflow for the study:
 - `data/`: Placeholders for imaging and features (Protected due to patient privacy).
 - `scripts_python/`: Notebooks for feature extraction and ICC selection.
 - `scripts_R/`: Scripts for machine learning training, model comparison, and SHAP analysis.
-- - `output/`: Organized directory placeholders for generated models and publication-ready visualizations (results are withheld until formal publication).
+-  `output/`: Organized directory placeholders for generated models and publication-ready visualizations (results are withheld until formal publication).
 
 ##  Requirements
 - **Python**: pyradiomics, pingouin, pandas, numpy.
