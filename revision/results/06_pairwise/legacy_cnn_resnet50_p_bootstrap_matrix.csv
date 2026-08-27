@@ -1,0 +1,6 @@
+,3D_radiomics,2D_radiomics,CNN_ResNet50,disc_csf_ratio,MeshVolume
+3D_radiomics,1.0,0.084,0.0,0.0,0.0
+2D_radiomics,0.084,1.0,0.032,0.0,0.0
+CNN_ResNet50,0.0,0.032,1.0,0.0,0.0
+disc_csf_ratio,0.0,0.0,0.0,1.0,0.0
+MeshVolume,0.0,0.0,0.0,0.0,1.0

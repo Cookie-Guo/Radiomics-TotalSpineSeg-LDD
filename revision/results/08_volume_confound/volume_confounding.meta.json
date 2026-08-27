@@ -1,0 +1,37 @@
+{
+  "script": "volume_confounding.py",
+  "generated_at": "2026-08-12T22:41:18",
+  "python": "3.12.6",
+  "seed": 4321,
+  "n_bootstrap": 1000,
+  "catboost_params": {
+    "depth": 2,
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 1,
+    "iterations": 223,
+    "loss_function": "MultiClass",
+    "random_seed": 4321,
+    "verbose": false,
+    "allow_writing_files": false
+  },
+  "volume_col": "original_shape_MeshVolume",
+  "split": "revision/splits/assignments.csv",
+  "seconds": 19.2,
+  "inputs_md5": {
+    "assignments.csv": "1b96e26001bf9699f1c34ea46c0898c0",
+    "extracted_data.xlsx": "307fe79b0addf42d9ca70a69310d27b0",
+    "labels.csv": "cad9b15fc67cef8f8dab3360d8cf3409",
+    "selected_features_3d.csv": "de0546505bbf0f70027729548c1e20af"
+  },
+  "outputs": [
+    "anchor_features_volume_rho.csv",
+    "feature_volume_spearman.csv",
+    "primary517_highest_volume_rho.csv",
+    "primary517_importance_and_rho.csv",
+    "summary.json",
+    "top3_features_volume_rho.csv",
+    "volume_only_performance.csv",
+    "volume_vs_primary.csv"
+  ],
+  "policy": "v3 full C2: Spearman + volume-only model + top/anchor features vs volume; no partial-correlation retrain of full pipeline"
+}

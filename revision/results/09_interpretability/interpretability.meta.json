@@ -1,0 +1,44 @@
+{
+  "script": "interpretability.py",
+  "generated_at": "2026-08-13T03:57:38",
+  "python": "3.12.6",
+  "seed": 4321,
+  "n_bootstrap": 1000,
+  "catboost_params": {
+    "depth": 2,
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 1,
+    "iterations": 223,
+    "loss_function": "MultiClass",
+    "random_seed": 4321,
+    "verbose": false,
+    "allow_writing_files": false
+  },
+  "split": "revision/splits/assignments.csv",
+  "seconds": 47.6,
+  "inputs_md5": {
+    "assignments.csv": "1b96e26001bf9699f1c34ea46c0898c0",
+    "extracted_data.xlsx": "307fe79b0addf42d9ca70a69310d27b0",
+    "labels.csv": "cad9b15fc67cef8f8dab3360d8cf3409",
+    "selected_features_3d.csv": "de0546505bbf0f70027729548c1e20af",
+    "features.csv": "a0bd299c1b67d9f37326faf3709bda75"
+  },
+  "outputs": [
+    "517_vs_simple_overlap.csv",
+    "ablation_performance.csv",
+    "concordance_table.csv",
+    "feature_vs_grade_spearman.csv",
+    "focus_features_grade_stats.csv",
+    "focus_vs_simple_spearman.csv",
+    "shap_mean_abs.csv",
+    "summary.json"
+  ],
+  "figures": [
+    "ablation_auc.png",
+    "radiomics_vs_simple_heatmap.png",
+    "shap_dependence_top3.png",
+    "shap_meanabs_top15.png",
+    "top_features_by_grade_boxplots.png"
+  ],
+  "policy": "v3 full C3: grade trends + vs B2 simple features + native TreeSHAP + Top-5/10 ablation; official primary AUC remains 0.936"
+}

@@ -1,0 +1,4 @@
+feature,importance,in_primary_517,spearman_rho_vs_volume,abs_rho_vs_volume,importance_rank
+log-sigma-3-0-mm-3D_glcm_Imc2,4.314790387825903,True,-0.4804098393551581,0.4804098393551581,1
+original_shape_Flatness,3.555861898259201,True,0.21755024415183044,0.21755024415183044,2
+lbp-3D-m2_firstorder_Variance,3.4566597404778046,True,0.29048911408456507,0.29048911408456507,3

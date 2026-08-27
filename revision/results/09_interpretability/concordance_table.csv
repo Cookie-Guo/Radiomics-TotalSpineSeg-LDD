@@ -1,0 +1,12 @@
+feature,short_name,feature_class,importance_rank,importance,spearman_rho_vs_grade,spearman_p,median_trend,best_simple,best_simple_rho
+log-sigma-3-0-mm-3D_glcm_Imc2,LoG3mm_glcm_Imc2,glcm,1,4.314790387825903,-0.7470513607588901,1.8409037342291347e-113,mixed,disc_csf_mean_ratio,0.578030940439395
+original_shape_Flatness,shape_Flatness,shape,2,3.555861898259201,-0.4243688894032749,6.233261790130334e-29,mixed,sphericity_2d,0.8148993985731766
+lbp-3D-m2_firstorder_Variance,LBPm2_firstorder_Variance,firstorder,3,3.4566597404778046,-0.03472571869751927,0.38422384252730124,mixed,area_mm2,0.3375530959234765
+log-sigma-4-0-mm-3D_firstorder_Minimum,LoG4mm_firstorder_Minimum,firstorder,4,3.3362923683811014,0.7623784767540469,8.382963548584749e-121,mixed,disc_csf_mean_ratio,-0.6494015317607993
+wavelet-LLL_glcm_SumEntropy,wavLLL_glcm_SumEntropy,glcm,5,2.8056355956415238,-0.6840070017258182,4.3416114322244983e-88,monotone_down,disc_csf_mean_ratio,0.7071892014645349
+lbp-3D-m2_glcm_DifferenceVariance,LBPm2_glcm_DifferenceVariance,glcm,6,2.331368351748674,0.25274181506154136,1.227053632643574e-10,mixed,area_mm2,0.277236428835077
+wavelet-LLL_glcm_Correlation,wavLLL_glcm_Correlation,glcm,7,2.2216053708356407,-0.7897920545852442,1.980134075697922e-135,mixed,disc_csf_mean_ratio,0.7215073467658508
+log-sigma-5-0-mm-3D_glcm_Correlation,LoG5mm_glcm_Correlation,glcm,8,1.968961971802148,-0.7088329629982504,2.883333524329276e-97,mixed,disc_csf_mean_ratio,0.6017282267729305
+lbp-3D-m1_glrlm_RunEntropy,LBPm1_glrlm_RunEntropy,glrlm,9,1.9588436960673874,-0.5885923991228653,5.384015480137277e-60,mixed,sphericity_2d,0.6086899860767871
+exponential_gldm_SmallDependenceLowGrayLevelEmphasis,exp_gldm_SmallDependenceLowGrayLevelEmpha…,gldm,10,1.734627144750165,-0.09403854562160527,0.018230893320099043,mixed,area_mm2,-0.7102489073777222
+original_shape_Sphericity,shape_Sphericity,shape,30,1.0301130219656107,-0.6071427492433789,1.0212704781456474e-64,monotone_down,sphericity_2d,0.7718168535013952

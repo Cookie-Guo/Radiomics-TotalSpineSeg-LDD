@@ -1,0 +1,8 @@
+{
+  "script": "inventory.py",
+  "generated_at": "2026-08-13T05:37:01",
+  "python": "3.12.6",
+  "raw": "<spider_root>",
+  "n_primary": 597,
+  "n_eligible": 597
+}

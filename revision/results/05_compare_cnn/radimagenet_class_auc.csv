@@ -1,0 +1,11 @@
+config,class,AUC,n_test_pos,n_test_total
+vision_radimagenet_official_reduced,1,0.9041666666666667,6,126
+vision_radimagenet_official_reduced,2,0.9017268445839874,35,126
+vision_radimagenet_official_reduced,3,0.7679028132992327,34,126
+vision_radimagenet_official_reduced,4,0.8768175582990398,45,126
+vision_radimagenet_official_reduced,5,0.9194444444444444,6,126
+vision_radimagenet_official_topvar512,1,0.8916666666666667,6,126
+vision_radimagenet_official_topvar512,2,0.8985871271585557,35,126
+vision_radimagenet_official_topvar512,3,0.748081841432225,34,126
+vision_radimagenet_official_topvar512,4,0.877914951989026,45,126
+vision_radimagenet_official_topvar512,5,0.925,6,126

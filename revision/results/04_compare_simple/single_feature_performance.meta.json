@@ -1,0 +1,8 @@
+{
+  "script": "single_feature_models.py",
+  "seed": 4321,
+  "n_boot": 1000,
+  "elapsed_sec": 39.01,
+  "timestamp": "2026-08-12T03:33:14",
+  "note": "Each of 5 simple features modeled alone (CatBoost); not only the 5-feature joint model."
+}

@@ -1,0 +1,10 @@
+{
+  "script": "ten_models_pairwise.py",
+  "purpose": "Paired bootstrap pairwise tests of ten models vs CatBoost (patient-level, 517 features)",
+  "seed": 4321,
+  "n_bootstrap": 1000,
+  "split": "revision/splits/assignments.csv",
+  "features": "revision/results/02_primary/selected_features_3d.csv",
+  "locked_params": "revision/results/02_primary/ten_models_best_parameters.csv",
+  "note": "Does not retune. Output meta written at results/02_primary/ten_models_pairwise.meta.json after each run."
+}

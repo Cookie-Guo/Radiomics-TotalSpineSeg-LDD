@@ -1,0 +1,71 @@
+{
+  "script": "model_2d_3d.py",
+  "generated_at": "2026-08-12T02:26:58",
+  "python": "3.12.6",
+  "catboost_params": {
+    "depth": 2,
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 1,
+    "iterations": 223,
+    "loss_function": "MultiClass",
+    "random_seed": 4321,
+    "verbose": false,
+    "allow_writing_files": false
+  },
+  "seed": 4321,
+  "seconds": 29.9,
+  "n_2d_discs": 630,
+  "n_3d_discs": 630,
+  "selected_3d_n": 439,
+  "selected_2d_n": 165,
+  "overlap_3d_selected_with_A1_313": 231,
+  "inputs_md5": {
+    "assignments.csv": "1b96e26001bf9699f1c34ea46c0898c0",
+    "extracted_data.xlsx": "307fe79b0addf42d9ca70a69310d27b0",
+    "features_2d.csv": "25a95acd839f58d1a30150d56c5f8a72"
+  },
+  "comparison": [
+    {
+      "config": "3D_3mm_existing",
+      "macro_AUC": 0.932385397529919,
+      "accuracy": 0.7698412698412699,
+      "macro_sensitivity": 0.677217553688142,
+      "macro_specificity": 0.9372350810756608,
+      "kappa": 0.6788821513314,
+      "kappa_quadratic": 0.8841397678990424,
+      "n_features_input": 1762,
+      "n_features_selected": 439,
+      "n_train": 504,
+      "n_test": 126,
+      "note": NaN
+    },
+    {
+      "config": "2D_midsagittal",
+      "macro_AUC": 0.9209428376412706,
+      "accuracy": 0.7142857142857143,
+      "macro_sensitivity": 0.6118020541549953,
+      "macro_specificity": 0.9258158588593371,
+      "kappa": 0.6082901554404145,
+      "kappa_quadratic": 0.815595363540569,
+      "n_features_input": 1209,
+      "n_features_selected": 165,
+      "n_train": 504,
+      "n_test": 126,
+      "note": NaN
+    },
+    {
+      "config": "3D_A1_official_CatBoost",
+      "macro_AUC": 0.914320105820106,
+      "accuracy": 0.658730158730159,
+      "macro_sensitivity": 0.600952380952381,
+      "macro_specificity": 0.907729439106251,
+      "kappa": 0.529442417926003,
+      "kappa_quadratic": 0.833830275229358,
+      "n_features_input": 1762,
+      "n_features_selected": 313,
+      "n_train": 504,
+      "n_test": 126,
+      "note": "from patient_level; not re-fit in this script"
+    }
+  ]
+}

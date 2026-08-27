@@ -1,0 +1,391 @@
+<mxfile host="app.diagrams.net" agent="Claude" pages="2">
+  <diagram name="Pipeline overview" id="slide8-logic-spine">
+    <mxGraphModel dx="-39" dy="-216" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1240" pageHeight="980" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-2" edge="1" parent="1" source="0NERcaxclZ4V0i1K-gzm-57" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#333333;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="0NERcaxclZ4V0i1K-gzm-32">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1749.6666259765625" y="2694" />
+              <mxPoint x="1749.6666259765625" y="2279" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4A90E2;fillOpacity=90;strokeColor=#333333;strokeWidth=3;shadow=1;fontSize=16;fontStyle=1;arcSize=5;" value="&lt;b&gt;Module 1:&amp;nbsp;&lt;/b&gt;&lt;b&gt;Patient Enrollment&lt;/b&gt;&lt;b&gt;&amp;nbsp;&amp;amp;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Image Acquisition&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="400" x="1789.6666259765625" y="1639" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F3FF;strokeColor=#666666;strokeWidth=2;fontSize=11;arcSize=10;" value="&lt;b&gt;Inclusion/Exclusion Criteria&lt;/b&gt;&lt;br&gt;Age: 18-75 years&lt;br&gt;Diagnosis: Pfirrmann grading&lt;br&gt;Exclusions: Surgery history, Spinal deformity, MRI contraindications&lt;br&gt;&lt;b&gt;Final Dataset:&lt;/b&gt;&lt;br&gt;&lt;b&gt;210&lt;/b&gt; patients, &lt;b&gt;630&lt;/b&gt; disc samples&lt;b&gt; (L3-S1)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="1789.6666259765625" y="1719" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F3FF;strokeColor=#666666;strokeWidth=2;fontSize=11;arcSize=10;" value="&lt;b&gt;MRI Acquisition Parameters&lt;/b&gt;&lt;br&gt;Equipment: 3.0T Philips Ingenia&lt;br&gt;Sequence: T2W Sagittal&lt;br&gt;TR/TE: 2400/80 ms&lt;br&gt;Slice: 4.0 mm&lt;br&gt;FOV: 300×300 mm²&lt;br&gt;Matrix: 768×258" vertex="1">
+          <mxGeometry height="120" width="180" x="2009.6666259765625" y="1719" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-6" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFE6CC;strokeColor=#666666;fontSize=11;" value="&lt;b&gt;210&lt;/b&gt; patients&lt;br&gt;&lt;b&gt;630&lt;/b&gt; ROIs" vertex="1">
+          <mxGeometry height="60" width="120" x="2229.6666259765625" y="1749" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#50C878;fillOpacity=90;strokeColor=#333333;strokeWidth=3;shadow=1;fontSize=16;fontStyle=1;arcSize=5;" value="&lt;b&gt;Module 2: Image Preprocessing&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="400" x="1789.6666259765625" y="1879" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8FFE8;strokeColor=#666666;strokeWidth=2;fontSize=11;arcSize=10;" value="&lt;b&gt;Spatial Resampling&lt;/b&gt;&lt;br&gt;Isotropic 1×1×1 mm³" vertex="1">
+          <mxGeometry height="60" width="85" x="1789.6666259765625" y="1959" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8FFE8;strokeColor=#666666;strokeWidth=2;fontSize=11;arcSize=10;" value="&lt;b&gt;LPI Reorientation&lt;/b&gt;&lt;br&gt;Standard coordinates" vertex="1">
+          <mxGeometry height="60" width="85" x="1894.6666259765625" y="1959" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8FFE8;strokeColor=#666666;strokeWidth=2;fontSize=11;arcSize=10;" value="&lt;b&gt;N4 Bias Correction&lt;/b&gt;&lt;br&gt;Remove intensity inhomogeneity" vertex="1">
+          <mxGeometry height="60" width="90" x="1999.6666259765625" y="1959" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8FFE8;strokeColor=#666666;strokeWidth=2;fontSize=11;arcSize=10;" value="&lt;b&gt;Normalization&lt;/b&gt;&lt;br&gt;Z-score standardization" vertex="1">
+          <mxGeometry height="60" width="85" x="2104.6666259765625" y="1959" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C75B7A;fillOpacity=90;strokeColor=#333333;strokeWidth=3;shadow=1;fontSize=16;fontStyle=1;arcSize=5;" value="&lt;b&gt;Module 3: ROI Segmentation&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="400" x="1789.6666259765625" y="2059" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8E4EA;strokeColor=#666666;strokeWidth=2;fontSize=11;arcSize=10;" value="&lt;b&gt;Automatic Segmentation&lt;/b&gt;&lt;br&gt;Method: TotalSpineSeg&lt;br&gt;Architecture: nnU-Net (3D Deep Learning)&lt;br&gt;Target: L3-L4, L4-L5, L5-S1 discs&lt;br&gt;Environment: GPU batch processing (CUDA 12.3)&lt;br&gt;Accuracy: Dice coefficient = 0.80" vertex="1">
+          <mxGeometry height="80" width="300" x="1839.6666259765625" y="2139" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-14" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFE6CC;strokeColor=#666666;fontSize=11;" value="&lt;b&gt;630&lt;/b&gt; segmentation masks&lt;br&gt;(NIfTI format)" vertex="1">
+          <mxGeometry height="60" width="160" x="2209.6666259765625" y="2149" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5A623;fillOpacity=90;strokeColor=#333333;strokeWidth=3;shadow=1;fontSize=16;fontStyle=1;arcSize=5;" value="&lt;b&gt;Module 4: Feature Extraction&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="400" x="2439.6666259765625" y="1639" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF0E0;strokeColor=#666666;strokeWidth=2;fontSize=11;arcSize=10;align=left;" value="&lt;b&gt;18 Image Transforms&lt;/b&gt;&lt;br&gt;• Original Image&lt;br&gt;• Wavelet (8 combinations)&lt;br&gt;• LoG filters (4 sigma values)&lt;br&gt;• Square, Square root&lt;br&gt;• Logarithm, Exponential" vertex="1">
+          <mxGeometry height="110" width="180" x="2439.6666259765625" y="1709" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF0E0;strokeColor=#666666;strokeWidth=2;fontSize=11;arcSize=10;align=left;" value="&lt;b&gt;6 Feature Categories&lt;/b&gt;&lt;br&gt;• Shape (14)&lt;br&gt;• First-order (18)&lt;br&gt;• GLCM (24)&lt;br&gt;• GLRLM (16)&lt;br&gt;• GLSZM (16)&lt;br&gt;• GLDM (14)&lt;br&gt;&lt;b&gt;Total: 1774 features/ROI&lt;/b&gt;" vertex="1">
+          <mxGeometry height="110" width="180" x="2659.6666259765625" y="1709" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-18" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFE6CC;strokeColor=#666666;fontSize=11;fontStyle=1;" value="630 ROI × 1774 features" vertex="1">
+          <mxGeometry height="50" width="200" x="2539.6666259765625" y="1839" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E07050;fillOpacity=90;strokeColor=#333333;strokeWidth=3;shadow=1;fontSize=16;fontStyle=1;arcSize=5;" value="&lt;b&gt;Module 5: Feature Selection&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="400" x="2439.6666259765625" y="1919" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-20" parent="1" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FDE9E2;strokeColor=#666666;strokeWidth=2;fontSize=10;direction=south;size=12;" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;Step 1: ICC Consistency&lt;/b&gt;&lt;br&gt;Input: 1774 features&lt;br&gt;Threshold: ICC &amp;gt; 0.75&lt;br&gt;Output: &lt;b&gt;1762&lt;/b&gt;&amp;nbsp;features&amp;nbsp;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="175" x="2444.6666259765625" y="1986.5" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-21" parent="1" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FDE9E2;strokeColor=#666666;strokeWidth=2;fontSize=10;direction=south;size=10;" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;Step 2: Data Splitting&lt;/b&gt;&lt;br&gt;Training: 168 patients (80%)&lt;br&gt;Testing: 42 patients (20%)&lt;br&gt;Method: Stratified Random&lt;/font&gt;" vertex="1">
+          <mxGeometry height="65" width="175" x="2651.6666259765625" y="1989" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-22" edge="1" parent="1" source="0NERcaxclZ4V0i1K-gzm-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="0NERcaxclZ4V0i1K-gzm-24" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-23" parent="1" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FDE9E2;strokeColor=#666666;strokeWidth=2;fontSize=10;direction=south;size=10;" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;Step 3: Kruskal-Wallis&lt;/b&gt;&lt;br&gt;&lt;b&gt;+ Bonferroni correction&lt;/b&gt;&lt;br&gt;(Training set only)&lt;br&gt;Output:&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;1548 &lt;/b&gt;features&lt;/span&gt;" vertex="1">
+          <mxGeometry height="65" width="175" x="2444.6666259765625" y="2069" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-24" parent="1" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FDE9E2;strokeColor=#666666;strokeWidth=2;fontSize=10;direction=south;size=8;" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;Step 4: Near-Zero Variance&lt;/b&gt;&lt;br&gt;(Training set only)&lt;br&gt;No features removed&lt;br&gt;Output: &lt;b&gt;1548&lt;/b&gt; features&lt;/font&gt;" vertex="1">
+          <mxGeometry height="65" width="175" x="2651.6666259765625" y="2069" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-25" parent="1" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FDE9E2;strokeColor=#666666;strokeWidth=2;fontSize=10;direction=south;size=6;" value="&lt;font style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 11px;&quot;&gt;Step 5: Correlation Removal&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;(Training set only)&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;Threshold: |r| &amp;gt; 0.9&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;Remove 1031 redundant features&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;Output: &lt;b&gt;517&lt;/b&gt;&amp;nbsp;features&amp;nbsp;&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="75" width="175" x="2551.6666259765625" y="2149" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-26" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFD700;strokeColor=#333333;fontSize=12;fontStyle=1;" value="&lt;b&gt;517&lt;/b&gt; selected features&lt;br&gt;(29.1% of original)" vertex="1">
+          <mxGeometry height="50" width="175" x="2551.6666259765625" y="2244" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BD10E0;fillOpacity=90;strokeColor=#333333;strokeWidth=3;shadow=1;fontSize=16;fontStyle=1;arcSize=5;" value="&lt;b&gt;Module 6: Model Training &amp;amp; Validation&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="400" x="2439.6666259765625" y="2319" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0FF;strokeColor=#666666;strokeWidth=2;fontSize=11;arcSize=10;" value="&lt;b&gt;Data Configuration&lt;/b&gt;&lt;br&gt;Training: 504 ROI × 517 features&lt;br&gt;Testing: 126 ROI × 517 features&lt;br&gt;Cross-validation: 5-Fold CV&lt;br&gt;&lt;i&gt;No data leakage ensured&lt;/i&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="2439.6666259765625" y="2389" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0FF;strokeColor=#666666;strokeWidth=2;fontSize=11;arcSize=10;align=left;" value="&lt;b&gt;10 Candidate Algorithms&lt;/b&gt;&lt;br&gt;&lt;u&gt;Tree-based (4):&lt;/u&gt; Decision Tree, Random Forest, XGBoost, &lt;b&gt;CatBoost★&lt;/b&gt;&lt;br&gt;&lt;u&gt;Linear (3):&lt;/u&gt; Lasso, Ridge, Logistic Regression&lt;br&gt;&lt;u&gt;Instance (1):&lt;/u&gt; KNN&lt;br&gt;&lt;u&gt;Probabilistic (1):&lt;/u&gt; Naive Bayes&lt;br&gt;&lt;u&gt;Deep Learning (1):&lt;/u&gt; Neural Network" vertex="1">
+          <mxGeometry height="120" width="180" x="2659.6666259765625" y="2389" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0FF;strokeColor=#666666;strokeWidth=2;fontSize=10;arcSize=10;" value="&lt;b&gt;Performance Metrics (6)&lt;/b&gt;&lt;br&gt;AUC, Sensitivity, Specificity&lt;br&gt;Accuracy, Precision, F1-Score" vertex="1">
+          <mxGeometry height="40" width="250" x="2529.6666259765625" y="2519" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFD700;strokeColor=light-dark(#0a0900, #624000);strokeWidth=1;fontSize=12;fontStyle=1;shadow=1;" value="Primary&amp;nbsp;Model: CatBoost&lt;br&gt;AUC = 0.936 (0.913–0.958)" vertex="1">
+          <mxGeometry height="50" width="200" x="2539.6666259765625" y="2569" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7ED321;fillOpacity=90;strokeColor=#333333;strokeWidth=3;shadow=1;fontSize=16;fontStyle=1;arcSize=5;" value="&lt;b&gt;Module 9: Model Interpretability&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="350" x="1814.6666259765625" y="2249" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-33" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8FFE0;strokeColor=#666666;strokeWidth=2;fontSize=11;arcSize=10;" value="&lt;b&gt;SHAP Feature Importance&lt;/b&gt;&lt;br&gt;Method: TreeSHAP&lt;br&gt;Metric: Mean |SHAP value|&lt;br&gt;Output: Feature importance ranking&lt;br&gt;(Global and per-class analysis)" vertex="1">
+          <mxGeometry height="90" width="260" x="1859.6666259765625" y="2339" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-34" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=light-dark(#e8ffe0, #36210a);strokeColor=#333333;strokeWidth=3;fontSize=12;fontStyle=1;" value="&lt;b&gt;Imaging Biomarker Discovery&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="200" x="1889.6666259765625" y="2469" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-35" edge="1" parent="1" source="0NERcaxclZ4V0i1K-gzm-5" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#333333;" target="0NERcaxclZ4V0i1K-gzm-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-36" edge="1" parent="1" source="0NERcaxclZ4V0i1K-gzm-6" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#333333;" target="0NERcaxclZ4V0i1K-gzm-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2289.6666259765625" y="1859" />
+              <mxPoint x="1989.6666259765625" y="1859" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-37" edge="1" parent="1" source="0NERcaxclZ4V0i1K-gzm-8" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#333333;" target="0NERcaxclZ4V0i1K-gzm-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-38" edge="1" parent="1" source="0NERcaxclZ4V0i1K-gzm-9" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#333333;" target="0NERcaxclZ4V0i1K-gzm-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-39" edge="1" parent="1" source="0NERcaxclZ4V0i1K-gzm-10" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#333333;" target="0NERcaxclZ4V0i1K-gzm-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-40" edge="1" parent="1" source="0NERcaxclZ4V0i1K-gzm-11" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#333333;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="0NERcaxclZ4V0i1K-gzm-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-41" edge="1" parent="1" source="0NERcaxclZ4V0i1K-gzm-13" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#333333;" target="0NERcaxclZ4V0i1K-gzm-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-42" edge="1" parent="1" source="0NERcaxclZ4V0i1K-gzm-14" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#333333;curved=1;" target="0NERcaxclZ4V0i1K-gzm-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2389.6666259765625" y="2179" />
+              <mxPoint x="2389.6666259765625" y="1669" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-43" edge="1" parent="1" source="0NERcaxclZ4V0i1K-gzm-16" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#333333;" target="0NERcaxclZ4V0i1K-gzm-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-44" edge="1" parent="1" source="0NERcaxclZ4V0i1K-gzm-17" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#333333;" target="0NERcaxclZ4V0i1K-gzm-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-45" edge="1" parent="1" source="0NERcaxclZ4V0i1K-gzm-18" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#333333;" target="0NERcaxclZ4V0i1K-gzm-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-46" edge="1" parent="1" source="0NERcaxclZ4V0i1K-gzm-20" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#333333;" target="0NERcaxclZ4V0i1K-gzm-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-47" edge="1" parent="1" source="0NERcaxclZ4V0i1K-gzm-21" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#333333;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="0NERcaxclZ4V0i1K-gzm-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-48" edge="1" parent="1" source="0NERcaxclZ4V0i1K-gzm-24" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#333333;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="0NERcaxclZ4V0i1K-gzm-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-49" edge="1" parent="1" source="0NERcaxclZ4V0i1K-gzm-25" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#333333;" target="0NERcaxclZ4V0i1K-gzm-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-50" edge="1" parent="1" source="0NERcaxclZ4V0i1K-gzm-26" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#333333;fontSize=11;fontStyle=1;" target="0NERcaxclZ4V0i1K-gzm-27" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-51" edge="1" parent="1" source="0NERcaxclZ4V0i1K-gzm-33" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#333333;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="0NERcaxclZ4V0i1K-gzm-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-52" edge="1" parent="1" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#333333;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="0NERcaxclZ4V0i1K-gzm-24">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2618.6666259765625" y="2102" />
+            </Array>
+            <mxPoint x="2618.1666259765625" y="2101" as="sourcePoint" />
+            <mxPoint x="2643.1666259765625" y="2101" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-53" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8FFE0;strokeColor=#666666;strokeWidth=2;fontSize=10;arcSize=10;align=center;" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;Additional analyses&lt;/b&gt;&lt;br&gt;Grade-wise associations&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;vs simple measurements&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;10-feature ablation&lt;br&gt;Mask ±1-voxel ICC (boundary robustness)&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="260" x="1859.6666259765625" y="2549" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-54" edge="1" parent="1" source="0NERcaxclZ4V0i1K-gzm-34" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#333333;" target="0NERcaxclZ4V0i1K-gzm-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-55" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2A9D8F;fillOpacity=90;strokeColor=#333333;strokeWidth=3;shadow=1;fontSize=16;fontStyle=1;arcSize=5;" value="&lt;b&gt;Module 7: Comparison of Alternative Approaches&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="400" x="2439.6666259765625" y="2664" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-56" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5F4EF;strokeColor=#666666;strokeWidth=2;fontSize=11;arcSize=10;align=center;" value="&lt;b&gt;Same patient-level split and CatBoost&lt;/b&gt;&lt;br&gt;• Mid-sagittal 2D radiomics (force2D): &lt;b&gt;AUC = 0.916&lt;/b&gt;&lt;br&gt;• Five scalars (DHI, peak SI, disc/CSF, area, sphericity); strongest disc/CSF: &lt;b&gt;AUC = 0.760&lt;/b&gt;&lt;br&gt;• Frozen ResNet50, RadImageNet weights: &lt;b&gt;AUC = 0.874&lt;/b&gt;&lt;br&gt;• Frozen ResNet50, ImageNet weights: &lt;b&gt;AUC = 0.864&lt;/b&gt;&lt;br&gt;• Disc MeshVolume: &lt;b&gt;AUC = 0.552&lt;/b&gt;" vertex="1">
+          <mxGeometry height="130" width="400" x="2439.6666259765625" y="2734" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-57" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#A67C52;fillOpacity=90;strokeColor=#333333;strokeWidth=3;shadow=1;fontSize=16;fontStyle=1;arcSize=5;" value="&lt;b&gt;Module 8: External Validation&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="400" x="1789.6666259765625" y="2664" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-58" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3EBE0;strokeColor=#666666;strokeWidth=2;fontSize=11;arcSize=10;align=center;" value="&lt;b&gt;SPIDER (Zenodo 10159290)&lt;/b&gt;&lt;br&gt;L3–S1 conventional T2&lt;br&gt;Frozen primary CatBoost, no re-selection&lt;br&gt;Independent public set (n = 597 discs)&lt;br&gt;&lt;b&gt;AUC = 0.838&lt;/b&gt;" vertex="1">
+          <mxGeometry height="130" width="400" x="1789.6666259765625" y="2734" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-59" edge="1" parent="1" source="0NERcaxclZ4V0i1K-gzm-31" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#333333;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="0NERcaxclZ4V0i1K-gzm-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0NERcaxclZ4V0i1K-gzm-60" edge="1" parent="1" source="0NERcaxclZ4V0i1K-gzm-55" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#333333;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="0NERcaxclZ4V0i1K-gzm-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="DLUd6_r2r0XRUoaPc8j_" name="Page 2">
+    <mxGraphModel dx="1201" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-1" edge="1" parent="1" source="rGVvrq2i_WiLTmf8wYsm-30" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#333333;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="rGVvrq2i_WiLTmf8wYsm-31">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1607" y="1548" />
+              <mxPoint x="1117" y="1548" />
+              <mxPoint x="957" y="1548" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4A90E2;fillOpacity=90;strokeColor=#333333;strokeWidth=3;shadow=1;fontSize=16;fontStyle=1;arcSize=5;" value="&lt;b&gt;Module 1:&amp;nbsp;&lt;/b&gt;&lt;b&gt;Patient Enrollment&lt;/b&gt;&lt;b&gt;&amp;nbsp;&amp;amp;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Image Acquisition&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="400" x="757" y="548" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F3FF;strokeColor=#666666;strokeWidth=2;fontSize=11;arcSize=10;" value="&lt;b&gt;Inclusion/Exclusion Criteria&lt;/b&gt;&lt;br&gt;Age: 18-75 years&lt;br&gt;Diagnosis: Pfirrmann grading&lt;br&gt;Exclusions: Surgery history, Spinal deformity, MRI contraindications&lt;br&gt;&lt;b&gt;Final Dataset:&lt;/b&gt;&lt;br&gt;210 patients, 630 disc samples (L3-S1)" vertex="1">
+          <mxGeometry height="120" width="180" x="757" y="628" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F3FF;strokeColor=#666666;strokeWidth=2;fontSize=11;arcSize=10;" value="&lt;b&gt;MRI Acquisition Parameters&lt;/b&gt;&lt;br&gt;Equipment: 3.0T Philips Ingenia&lt;br&gt;Sequence: T2W Sagittal&lt;br&gt;TR/TE: 2400/80 ms&lt;br&gt;Slice: 4.0 mm&lt;br&gt;FOV: 300×300 mm²&lt;br&gt;Matrix: 768×258" vertex="1">
+          <mxGeometry height="120" width="180" x="977" y="628" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-5" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFE6CC;strokeColor=#666666;fontSize=11;" value="210 patients&lt;br&gt;630 ROIs" vertex="1">
+          <mxGeometry height="60" width="120" x="1197" y="658" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#50C878;fillOpacity=90;strokeColor=#333333;strokeWidth=3;shadow=1;fontSize=16;fontStyle=1;arcSize=5;" value="&lt;b&gt;Module 2: Image Preprocessing&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="400" x="757" y="788" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8FFE8;strokeColor=#666666;strokeWidth=2;fontSize=11;arcSize=10;" value="&lt;b&gt;Spatial Resampling&lt;/b&gt;&lt;br&gt;Isotropic 1×1×1 mm³" vertex="1">
+          <mxGeometry height="60" width="85" x="757" y="868" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8FFE8;strokeColor=#666666;strokeWidth=2;fontSize=11;arcSize=10;" value="&lt;b&gt;LPI Reorientation&lt;/b&gt;&lt;br&gt;Standard coordinates" vertex="1">
+          <mxGeometry height="60" width="85" x="862" y="868" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8FFE8;strokeColor=#666666;strokeWidth=2;fontSize=11;arcSize=10;" value="&lt;b&gt;N4 Bias Correction&lt;/b&gt;&lt;br&gt;Remove intensity inhomogeneity" vertex="1">
+          <mxGeometry height="60" width="90" x="967" y="868" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8FFE8;strokeColor=#666666;strokeWidth=2;fontSize=11;arcSize=10;" value="&lt;b&gt;Normalization&lt;/b&gt;&lt;br&gt;Z-score standardization" vertex="1">
+          <mxGeometry height="60" width="85" x="1072" y="868" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#50C878;fillOpacity=90;strokeColor=#333333;strokeWidth=3;shadow=1;fontSize=16;fontStyle=1;arcSize=5;" value="&lt;b&gt;Module 3: ROI Segmentation&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="400" x="757" y="968" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8FFE8;strokeColor=#666666;strokeWidth=2;fontSize=11;arcSize=10;" value="&lt;b&gt;Automatic Segmentation&lt;/b&gt;&lt;br&gt;Method: TotalSpineSeg&lt;br&gt;Architecture: nnU-Net (3D Deep Learning)&lt;br&gt;Target: L3-L4, L4-L5, L5-S1 discs&lt;br&gt;Environment: GPU batch processing (CUDA 12.3)&lt;br&gt;Accuracy: Dice coefficient = 0.80" vertex="1">
+          <mxGeometry height="80" width="300" x="807" y="1048" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-13" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFE6CC;strokeColor=#666666;fontSize=11;" value="630 segmentation masks&lt;br&gt;(NIfTI format)" vertex="1">
+          <mxGeometry height="60" width="160" x="1177" y="1058" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5A623;fillOpacity=90;strokeColor=#333333;strokeWidth=3;shadow=1;fontSize=16;fontStyle=1;arcSize=5;" value="&lt;b&gt;Module 4: Feature Extraction&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="400" x="1407" y="548" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF0E0;strokeColor=#666666;strokeWidth=2;fontSize=11;arcSize=10;align=left;" value="&lt;b&gt;18 Image Transforms&lt;/b&gt;&lt;br&gt;• Original Image&lt;br&gt;• Wavelet (8 combinations)&lt;br&gt;• LoG filters (4 sigma values)&lt;br&gt;• Square, Square root&lt;br&gt;• Logarithm, Exponential" vertex="1">
+          <mxGeometry height="110" width="180" x="1407" y="618" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF0E0;strokeColor=#666666;strokeWidth=2;fontSize=11;arcSize=10;align=left;" value="&lt;b&gt;6 Feature Categories&lt;/b&gt;&lt;br&gt;• Shape (14)&lt;br&gt;• First-order (18)&lt;br&gt;• GLCM (24)&lt;br&gt;• GLRLM (16)&lt;br&gt;• GLSZM (16)&lt;br&gt;• GLDM (14)&lt;br&gt;&lt;b&gt;Total: 1774 features/ROI&lt;/b&gt;" vertex="1">
+          <mxGeometry height="110" width="180" x="1627" y="618" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-17" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFE6CC;strokeColor=#666666;fontSize=11;fontStyle=1;" value="630 ROI × 1774 features" vertex="1">
+          <mxGeometry height="50" width="200" x="1507" y="748" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5A623;fillOpacity=90;strokeColor=#333333;strokeWidth=3;shadow=1;fontSize=16;fontStyle=1;arcSize=5;" value="&lt;b&gt;Module 5: Feature Selection&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="400" x="1407" y="828" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-19" parent="1" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFF0E0;strokeColor=#666666;strokeWidth=2;fontSize=10;direction=south;size=12;" value="&lt;b&gt;Step 1: ICC Consistency&lt;/b&gt;&lt;br&gt;Input: 1774 features&lt;br&gt;Threshold: ICC &amp;gt; 0.75&lt;br&gt;Output: &lt;b&gt;1762&lt;/b&gt;&amp;nbsp;features (99.3%)" vertex="1">
+          <mxGeometry height="70" width="175" x="1412" y="895.5" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-20" parent="1" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFF0E0;strokeColor=#666666;strokeWidth=2;fontSize=10;direction=south;size=10;" value="&lt;b&gt;Step 2: Data Splitting&lt;/b&gt;&lt;br&gt;Training: 504 ROI (80%)&lt;br&gt;Testing: 126 ROI (20%)&lt;br&gt;Method: Stratified Random" vertex="1">
+          <mxGeometry height="65" width="175" x="1619" y="898" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-21" edge="1" parent="1" source="rGVvrq2i_WiLTmf8wYsm-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="rGVvrq2i_WiLTmf8wYsm-23" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-22" parent="1" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFF0E0;strokeColor=#666666;strokeWidth=2;fontSize=10;direction=south;size=10;" value="&lt;b&gt;Step 3: Kruskal-Wallis&lt;/b&gt;&lt;br&gt;&lt;b&gt;+ Bonferroni correction&lt;/b&gt;&lt;br&gt;(Training set only)&lt;br&gt;Output: &lt;b&gt;1573&lt;/b&gt; features (88.8%)" vertex="1">
+          <mxGeometry height="65" width="175" x="1412" y="978" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-23" parent="1" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFF0E0;strokeColor=#666666;strokeWidth=2;fontSize=10;direction=south;size=8;" value="&lt;b&gt;Step 4: Near-Zero Variance&lt;/b&gt;&lt;br&gt;(Training set only)&lt;br&gt;Remove 2 constant features&lt;br&gt;Output: &lt;b&gt;1571&lt;/b&gt; features (99.9%)" vertex="1">
+          <mxGeometry height="65" width="175" x="1619" y="978" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-24" parent="1" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFF0E0;strokeColor=#666666;strokeWidth=2;fontSize=10;direction=south;size=6;" value="&lt;b&gt;Step 5: Correlation Removal&lt;/b&gt;&lt;br&gt;(Training set only)&lt;br&gt;Threshold: |r| &gt; 0.9&lt;br&gt;Remove 1258 redundant features&lt;br&gt;Output: &lt;b&gt;313&lt;/b&gt; features (19.9%)" vertex="1">
+          <mxGeometry height="75" width="175" x="1519" y="1058" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-25" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFD700;strokeColor=#333333;fontSize=12;fontStyle=1;" value="&lt;b&gt;313&lt;/b&gt; selected features&lt;br&gt;(17.6% of original)" vertex="1">
+          <mxGeometry height="50" width="175" x="1519" y="1153" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BD10E0;fillOpacity=90;strokeColor=#333333;strokeWidth=3;shadow=1;fontSize=16;fontStyle=1;arcSize=5;" value="&lt;b&gt;Module 6: Model Training &amp;amp; Validation&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="400" x="1407" y="1228" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0FF;strokeColor=#666666;strokeWidth=2;fontSize=11;arcSize=10;" value="&lt;b&gt;Data Configuration&lt;/b&gt;&lt;br&gt;Training: 504 ROI × 313 features&lt;br&gt;Testing: 126 ROI × 313 features&lt;br&gt;Cross-validation: 5-Fold CV&lt;br&gt;&lt;i&gt;No data leakage ensured&lt;/i&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="1407" y="1298" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0FF;strokeColor=#666666;strokeWidth=2;fontSize=11;arcSize=10;align=left;" value="&lt;b&gt;10 Candidate Algorithms&lt;/b&gt;&lt;br&gt;&lt;u&gt;Tree-based (4):&lt;/u&gt; Decision Tree, Random Forest, XGBoost, &lt;b&gt;CatBoost★&lt;/b&gt;&lt;br&gt;&lt;u&gt;Linear (3):&lt;/u&gt; Lasso, Ridge, Logistic Regression&lt;br&gt;&lt;u&gt;Instance (1):&lt;/u&gt; KNN&lt;br&gt;&lt;u&gt;Probabilistic (1):&lt;/u&gt; Naive Bayes&lt;br&gt;&lt;u&gt;Deep Learning (1):&lt;/u&gt; Neural Network" vertex="1">
+          <mxGeometry height="120" width="180" x="1627" y="1298" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0FF;strokeColor=#666666;strokeWidth=2;fontSize=10;arcSize=10;" value="&lt;b&gt;Performance Metrics (6)&lt;/b&gt;&lt;br&gt;AUC, Sensitivity, Specificity&lt;br&gt;Accuracy, Precision, F1-Score" vertex="1">
+          <mxGeometry height="40" width="250" x="1497" y="1428" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFD700;strokeColor=#FFD700;strokeWidth=3;fontSize=12;fontStyle=1;shadow=1;" value="&lt;b&gt;Optimal Model: CatBoost&lt;/b&gt;&lt;br&gt;AUC = 0.932 ± 0.025" vertex="1">
+          <mxGeometry height="50" width="200" x="1507" y="1478" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7ED321;fillOpacity=90;strokeColor=#333333;strokeWidth=3;shadow=1;fontSize=16;fontStyle=1;arcSize=5;" value="&lt;b&gt;Module 7: Model Interpretability&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="350" x="782" y="1158" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8FFE0;strokeColor=#666666;strokeWidth=2;fontSize=11;arcSize=10;" value="&lt;b&gt;SHAP Feature Importance&lt;/b&gt;&lt;br&gt;Method: TreeSHAP&lt;br&gt;Metric: Mean |SHAP value|&lt;br&gt;Output: Feature importance ranking&lt;br&gt;(Global and per-class analysis)" vertex="1">
+          <mxGeometry height="90" width="260" x="827" y="1248" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-33" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#333333;strokeWidth=3;fontSize=12;fontStyle=1;" value="&lt;b&gt;Imaging Biomarker Discovery&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="200" x="857" y="1378" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-34" edge="1" parent="1" source="rGVvrq2i_WiLTmf8wYsm-4" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#333333;" target="rGVvrq2i_WiLTmf8wYsm-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-35" edge="1" parent="1" source="rGVvrq2i_WiLTmf8wYsm-5" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#333333;" target="rGVvrq2i_WiLTmf8wYsm-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1257" y="768" />
+              <mxPoint x="957" y="768" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-36" edge="1" parent="1" source="rGVvrq2i_WiLTmf8wYsm-7" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#333333;" target="rGVvrq2i_WiLTmf8wYsm-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-37" edge="1" parent="1" source="rGVvrq2i_WiLTmf8wYsm-8" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#333333;" target="rGVvrq2i_WiLTmf8wYsm-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-38" edge="1" parent="1" source="rGVvrq2i_WiLTmf8wYsm-9" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#333333;" target="rGVvrq2i_WiLTmf8wYsm-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-39" edge="1" parent="1" source="rGVvrq2i_WiLTmf8wYsm-10" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#333333;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="rGVvrq2i_WiLTmf8wYsm-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-40" edge="1" parent="1" source="rGVvrq2i_WiLTmf8wYsm-12" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#333333;" target="rGVvrq2i_WiLTmf8wYsm-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-41" edge="1" parent="1" source="rGVvrq2i_WiLTmf8wYsm-13" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#333333;curved=1;" target="rGVvrq2i_WiLTmf8wYsm-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1357" y="1088" />
+              <mxPoint x="1357" y="578" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-42" edge="1" parent="1" source="rGVvrq2i_WiLTmf8wYsm-15" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#333333;" target="rGVvrq2i_WiLTmf8wYsm-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-43" edge="1" parent="1" source="rGVvrq2i_WiLTmf8wYsm-16" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#333333;" target="rGVvrq2i_WiLTmf8wYsm-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-44" edge="1" parent="1" source="rGVvrq2i_WiLTmf8wYsm-17" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#333333;" target="rGVvrq2i_WiLTmf8wYsm-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-45" edge="1" parent="1" source="rGVvrq2i_WiLTmf8wYsm-19" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#333333;" target="rGVvrq2i_WiLTmf8wYsm-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-46" edge="1" parent="1" source="rGVvrq2i_WiLTmf8wYsm-20" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#333333;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="rGVvrq2i_WiLTmf8wYsm-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-47" edge="1" parent="1" source="rGVvrq2i_WiLTmf8wYsm-23" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#333333;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="rGVvrq2i_WiLTmf8wYsm-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-48" edge="1" parent="1" source="rGVvrq2i_WiLTmf8wYsm-24" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#333333;" target="rGVvrq2i_WiLTmf8wYsm-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-49" edge="1" parent="1" source="rGVvrq2i_WiLTmf8wYsm-25" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#333333;fontSize=11;fontStyle=1;" target="rGVvrq2i_WiLTmf8wYsm-26" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-50" edge="1" parent="1" source="rGVvrq2i_WiLTmf8wYsm-32" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#333333;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="rGVvrq2i_WiLTmf8wYsm-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rGVvrq2i_WiLTmf8wYsm-51" edge="1" parent="1" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#333333;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="rGVvrq2i_WiLTmf8wYsm-23">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1586" y="1011" />
+            </Array>
+            <mxPoint x="1585.5" y="1010" as="sourcePoint" />
+            <mxPoint x="1610.5" y="1010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

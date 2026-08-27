@@ -1,0 +1,60 @@
+{
+  "n_overview_series": 447,
+  "n_inventory_rows": 1341,
+  "by_contrast": {
+    "t1": 196,
+    "t2": 210,
+    "t2_space": 41
+  },
+  "eligible_before_files": {
+    "n_discs": 597,
+    "n_patients": 199,
+    "grade_n": {
+      "1": 52,
+      "2": 93,
+      "3": 191,
+      "4": 146,
+      "5": 115
+    }
+  },
+  "primary": {
+    "n_discs": 597,
+    "n_patients": 199,
+    "grade_n": {
+      "1": 52,
+      "2": 93,
+      "3": 191,
+      "4": 146,
+      "5": 115
+    },
+    "level_n": {
+      "L5-S1": 199,
+      "L4-L5": 199,
+      "L3-L4": 199
+    },
+    "manufacturer_n": {
+      "Philips": 105,
+      "SIEMENS": 94
+    },
+    "field_n": {
+      "1.5": 103,
+      "3.0": 96
+    }
+  },
+  "excluded_reason_counts": {
+    "contrast=t1": 561,
+    "contrast=t2_space": 114,
+    "contrast=t1;num_vertebrae=9": 27,
+    "num_vertebrae=9": 27,
+    "contrast=t2_space;num_vertebrae=9": 9,
+    "num_vertebrae=5": 3,
+    "num_vertebrae=3": 3
+  },
+  "mapping_rule": "IVD 1/2/3 → L5-S1 / L4-L5 / L3-L4 if lowest vertebra assumed L5; num_vertebrae in {6,7,8}",
+  "space_excluded_from_primary": true,
+  "generated_at": "2026-08-13T05:37:01",
+  "python": "3.12.6",
+  "image_dir": "<spider_root>/images/images",
+  "mask_dir": "<spider_root>/masks/masks",
+  "paths_resolved": true
+}

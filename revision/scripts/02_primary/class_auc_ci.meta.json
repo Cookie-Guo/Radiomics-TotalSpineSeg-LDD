@@ -1,0 +1,10 @@
+{
+  "script": "class_auc_ci.py",
+  "purpose": "Bootstrap 95% CI for one-vs-rest grade AUCs on 02_primary test predictions",
+  "seed": 4321,
+  "n_bootstrap": 1000,
+  "inputs": [
+    "revision/results/02_primary/test_predictions_3d.csv",
+    "revision/results/02_primary/test_predictions_2d.csv"
+  ]
+}

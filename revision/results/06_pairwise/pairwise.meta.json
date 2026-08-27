@@ -1,0 +1,29 @@
+{
+  "script": "comparator_pairwise.py",
+  "generated_at": "2026-08-27T06:17:12",
+  "python": "3.12.6",
+  "seed": 4321,
+  "n_bootstrap": 1000,
+  "bootstrap": "paired unstratified disc-level; same indices across models",
+  "p_primary": "Wald 2*(1-Phi(|d|/SE)) matching ten_models_pairwise / original Bootstrap_*_Comparison",
+  "p_secondary": "two-sided bootstrap tail 2*min(P(d<=0), P(d>=0))",
+  "n_test": 126,
+  "seconds": 39.1,
+  "observed_auc": {
+    "3D_radiomics": 0.9363060656085933,
+    "2D_radiomics": 0.916072543886046,
+    "CNN_RadImageNet": 0.8740116654586743,
+    "CNN_ImageNet": 0.8643740039886468,
+    "disc_csf_ratio": 0.7599459006457917,
+    "MeshVolume": 0.5520691485989224
+  },
+  "inputs_md5": {
+    "assignments.csv": "1b96e26001bf9699f1c34ea46c0898c0",
+    "test_predictions_3d.csv": "0787bce2d89265337ae2f592a531dab1",
+    "test_predictions_2d.csv": "56ff1bfd940ebe77eceb909cb90a23af",
+    "imagenet_test_predictions.csv": "c53ec0fbcbf16b68a76d2c340cb8ed30",
+    "radimagenet_test_predictions.csv": "50167a4602f503aca475d34f6766d663",
+    "features.csv": "a0bd299c1b67d9f37326faf3709bda75",
+    "extracted_data.xlsx": "307fe79b0addf42d9ca70a69310d27b0"
+  }
+}

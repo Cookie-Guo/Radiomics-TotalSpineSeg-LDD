@@ -1,0 +1,11 @@
+config,class,AUC,n_test_pos,n_test_total
+vision_radimagenet_official_caffe_reduced,1,0.8861111111111111,6,126
+vision_radimagenet_official_caffe_reduced,2,0.8502354788069074,35,126
+vision_radimagenet_official_caffe_reduced,3,0.6902173913043478,34,126
+vision_radimagenet_official_caffe_reduced,4,0.8924554183813442,45,126
+vision_radimagenet_official_caffe_reduced,5,0.8805555555555555,6,126
+vision_radimagenet_official_caffe_topvar512,1,0.8638888888888889,6,126
+vision_radimagenet_official_caffe_topvar512,2,0.8320251177394035,35,126
+vision_radimagenet_official_caffe_topvar512,3,0.7001278772378517,34,126
+vision_radimagenet_official_caffe_topvar512,4,0.8814814814814815,45,126
+vision_radimagenet_official_caffe_topvar512,5,0.8944444444444444,6,126

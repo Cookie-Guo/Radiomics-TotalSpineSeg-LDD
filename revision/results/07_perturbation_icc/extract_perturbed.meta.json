@@ -1,0 +1,38 @@
+{
+  "script": "extract_perturbed.py",
+  "seed": 4321,
+  "conditions": [
+    "original",
+    "erode1",
+    "dilate1"
+  ],
+  "settings": {
+    "resampledPixelSpacing": [
+      3,
+      3,
+      3
+    ],
+    "binWidth": 5,
+    "normalizeScale": 200,
+    "padDistance": 10,
+    "normalize": true
+  },
+  "morphology": "BinaryErode/Dilate kernel radius (1,1,1) voxel",
+  "n_discs_requested": 630,
+  "n_per_condition": {
+    "original": 630,
+    "erode1": 629,
+    "dilate1": 630
+  },
+  "n_errors": 1,
+  "smoke": false,
+  "elapsed_sec": 3464.94,
+  "platform": "Windows-10-10.0.22621-SP0",
+  "python": "3.10.20",
+  "radiomics": "v3.0.1",
+  "inputs_md5": {
+    "assignments.csv": "1b96e26001bf9699f1c34ea46c0898c0",
+    "A2_acquisition_variants.csv": "e804b03081ba3d0f4be8b10f6818cabd"
+  },
+  "timestamp": "2026-08-12T21:49:57"
+}

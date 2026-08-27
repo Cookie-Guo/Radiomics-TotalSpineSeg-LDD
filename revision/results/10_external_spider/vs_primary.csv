@@ -1,0 +1,3 @@
+config,macro_AUC,macro_AUC_ci_low,macro_AUC_ci_high,n_features,n_test,accuracy,kappa_quadratic,n_patients,delta_vs_primary
+3D_primary_official,0.9363060656085932,0.9127925341655584,0.9584426287631588,517.0,126,,,,
+SPIDER_expert_mask_frozen517,0.8383007705350284,0.81580648380974,0.8599506793254377,,597,0.5360134003350083,0.7053117287262582,199.0,-0.09800529507356481

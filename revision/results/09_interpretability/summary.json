@@ -1,0 +1,210 @@
+{
+  "n_discs": 630,
+  "n_primary_features": 517,
+  "refit_517_macro_AUC": 0.9363060656085933,
+  "official_primary_macro_AUC": 0.9363060656085932,
+  "feature_vs_grade": {
+    "n_features": 517,
+    "median_abs_rho": 0.35140800647683645,
+    "mean_abs_rho": 0.36332790045417324,
+    "frac_abs_rho_gt_0.3": 0.586073500967118,
+    "n_abs_rho_gt_0.3": 303,
+    "frac_abs_rho_gt_0.5": 0.26305609284332687,
+    "n_abs_rho_gt_0.5": 136,
+    "n_bonferroni_sig": 437,
+    "bonferroni_alpha": 9.671179883945843e-05
+  },
+  "top10_importance": [
+    "log-sigma-3-0-mm-3D_glcm_Imc2",
+    "original_shape_Flatness",
+    "lbp-3D-m2_firstorder_Variance",
+    "log-sigma-4-0-mm-3D_firstorder_Minimum",
+    "wavelet-LLL_glcm_SumEntropy",
+    "lbp-3D-m2_glcm_DifferenceVariance",
+    "wavelet-LLL_glcm_Correlation",
+    "log-sigma-5-0-mm-3D_glcm_Correlation",
+    "lbp-3D-m1_glrlm_RunEntropy",
+    "exponential_gldm_SmallDependenceLowGrayLevelEmphasis"
+  ],
+  "anchors_present": [
+    "original_shape_Sphericity",
+    "original_shape_Flatness",
+    "log-sigma-4-0-mm-3D_firstorder_Minimum"
+  ],
+  "focus_features": [
+    "log-sigma-3-0-mm-3D_glcm_Imc2",
+    "original_shape_Flatness",
+    "lbp-3D-m2_firstorder_Variance",
+    "log-sigma-4-0-mm-3D_firstorder_Minimum",
+    "wavelet-LLL_glcm_SumEntropy",
+    "lbp-3D-m2_glcm_DifferenceVariance",
+    "wavelet-LLL_glcm_Correlation",
+    "log-sigma-5-0-mm-3D_glcm_Correlation",
+    "lbp-3D-m1_glrlm_RunEntropy",
+    "exponential_gldm_SmallDependenceLowGrayLevelEmphasis",
+    "original_shape_Sphericity"
+  ],
+  "top3": [
+    {
+      "feature": "log-sigma-3-0-mm-3D_glcm_Imc2",
+      "importance_rank": 1,
+      "importance": 4.314790387825903,
+      "spearman_rho_vs_grade": -0.7470513607588901,
+      "median_trend": "mixed",
+      "best_simple": "disc_csf_mean_ratio",
+      "best_simple_rho": 0.578030940439395,
+      "medians": [
+        0.9792999651714223,
+        0.9607431513357272,
+        0.885314355817196,
+        0.8180562632217685,
+        0.8669214960817749
+      ]
+    },
+    {
+      "feature": "original_shape_Flatness",
+      "importance_rank": 2,
+      "importance": 3.555861898259201,
+      "spearman_rho_vs_grade": -0.4243688894032749,
+      "median_trend": "mixed",
+      "best_simple": "sphericity_2d",
+      "best_simple_rho": 0.8148993985731766,
+      "medians": [
+        0.2391872725279865,
+        0.2454546285215235,
+        0.227077940123731,
+        0.215195124112351,
+        0.138714823972806
+      ]
+    },
+    {
+      "feature": "lbp-3D-m2_firstorder_Variance",
+      "importance_rank": 3,
+      "importance": 3.4566597404778046,
+      "spearman_rho_vs_grade": -0.03472571869751927,
+      "median_trend": "mixed",
+      "best_simple": "area_mm2",
+      "best_simple_rho": 0.3375530959234765,
+      "medians": [
+        14.61825519281783,
+        17.519888821648983,
+        19.63784481989516,
+        17.367637168904942,
+        9.80179081062065
+      ]
+    }
+  ],
+  "overlap_517_vs_simple": [
+    {
+      "simple_feature": "dhi",
+      "simple_label": "DHI",
+      "n_radiomics": 517,
+      "median_abs_rho": 0.1128276302768721,
+      "mean_abs_rho": 0.14126480645744627,
+      "frac_abs_rho_gt_0.5": 0.007736943907156673,
+      "n_abs_rho_gt_0.5": 4,
+      "frac_abs_rho_gt_0.7": 0.0,
+      "n_abs_rho_gt_0.7": 0,
+      "max_abs_rho": 0.5770710007745191
+    },
+    {
+      "simple_feature": "delta_peak_si_norm",
+      "simple_label": "norm_peak_SI_diff",
+      "n_radiomics": 517,
+      "median_abs_rho": 0.12063700893344767,
+      "mean_abs_rho": 0.13049528936108395,
+      "frac_abs_rho_gt_0.5": 0.0,
+      "n_abs_rho_gt_0.5": 0,
+      "frac_abs_rho_gt_0.7": 0.0,
+      "n_abs_rho_gt_0.7": 0,
+      "max_abs_rho": 0.40617581175509415
+    },
+    {
+      "simple_feature": "disc_csf_mean_ratio",
+      "simple_label": "disc_CSF_ratio",
+      "n_radiomics": 517,
+      "median_abs_rho": 0.29380690036388196,
+      "mean_abs_rho": 0.31787806245834194,
+      "frac_abs_rho_gt_0.5": 0.2495164410058027,
+      "n_abs_rho_gt_0.5": 129,
+      "frac_abs_rho_gt_0.7": 0.03288201160541586,
+      "n_abs_rho_gt_0.7": 17,
+      "max_abs_rho": 0.7635903122473869
+    },
+    {
+      "simple_feature": "area_mm2",
+      "simple_label": "midsag_area",
+      "n_radiomics": 517,
+      "median_abs_rho": 0.22015472985844173,
+      "mean_abs_rho": 0.26853155959178626,
+      "frac_abs_rho_gt_0.5": 0.18181818181818182,
+      "n_abs_rho_gt_0.5": 94,
+      "frac_abs_rho_gt_0.7": 0.04061895551257253,
+      "n_abs_rho_gt_0.7": 21,
+      "max_abs_rho": 0.9063983611916313
+    },
+    {
+      "simple_feature": "sphericity_2d",
+      "simple_label": "sphericity_2d",
+      "n_radiomics": 517,
+      "median_abs_rho": 0.20426331786823781,
+      "mean_abs_rho": 0.2147596954020705,
+      "frac_abs_rho_gt_0.5": 0.03481624758220503,
+      "n_abs_rho_gt_0.5": 18,
+      "frac_abs_rho_gt_0.7": 0.005802707930367505,
+      "n_abs_rho_gt_0.7": 3,
+      "max_abs_rho": 0.8148993985731766
+    }
+  ],
+  "importance_vs_meanabs_shap_spearman": 0.996281402510877,
+  "shap_top5": [
+    {
+      "feature": "log-sigma-3-0-mm-3D_glcm_Imc2",
+      "shap_rank": 1,
+      "mean_abs_shap_all": 0.09446554006631953,
+      "importance_rank": 1
+    },
+    {
+      "feature": "lbp-3D-m2_firstorder_Variance",
+      "shap_rank": 2,
+      "mean_abs_shap_all": 0.07158164727231434,
+      "importance_rank": 3
+    },
+    {
+      "feature": "log-sigma-4-0-mm-3D_firstorder_Minimum",
+      "shap_rank": 3,
+      "mean_abs_shap_all": 0.06520408201257533,
+      "importance_rank": 4
+    },
+    {
+      "feature": "original_shape_Flatness",
+      "shap_rank": 4,
+      "mean_abs_shap_all": 0.06126658913205853,
+      "importance_rank": 2
+    },
+    {
+      "feature": "lbp-3D-m2_glcm_DifferenceVariance",
+      "shap_rank": 5,
+      "mean_abs_shap_all": 0.06053228576441615,
+      "importance_rank": 6
+    }
+  ],
+  "ablation": {
+    "top5_macro_AUC": 0.9154010609707914,
+    "top10_macro_AUC": 0.9218261409880715,
+    "official_primary_macro_AUC": 0.9363060656085932,
+    "delta_primary_minus_top5": 0.02090500463780176,
+    "delta_primary_minus_top10": 0.014479924620521722
+  },
+  "shap_shape": [
+    630,
+    5,
+    517
+  ],
+  "legacy_shap_note": "Do not use results/legacy_superseded/patient_level_R_20260810/ SHAP PDFs as official figures; they belong to the superseded disc-level/R pipeline.",
+  "what_this_does_not_prove": [
+    "automatic vs manual segmentation",
+    "causal biomarker status",
+    "external validity"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-08-09T20:55:20",
+  "seed": 4321,
+  "n_folds": 5,
+  "n_repeats": 10,
+  "grouping": "patient_id",
+  "stratification": "pfirrmann (approximate, via StratifiedGroupKFold)",
+  "n_discs": 630,
+  "n_patients": 210,
+  "python": "3.12.6",
+  "sklearn": "1.9.0",
+  "pandas": "2.2.3",
+  "note": "Sole split used by downstream scripts. Do not re-split."
+}

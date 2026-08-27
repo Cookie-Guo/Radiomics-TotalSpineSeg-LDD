@@ -1,0 +1,9 @@
+{
+  "script": "class_auc_ci.py",
+  "generated_at": "2026-08-13T22:09:37",
+  "python": "3.12.6",
+  "seed": 4321,
+  "n_bootstrap": 1000,
+  "bootstrap": "unstratified disc-level, same as primary macro AUC",
+  "seconds": 6.6
+}

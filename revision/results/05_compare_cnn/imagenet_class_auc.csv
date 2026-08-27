@@ -1,0 +1,11 @@
+config,class,AUC,n_test_pos,n_test_total
+vision_resnet50_reduced,1,0.9111111111111111,6,126
+vision_resnet50_reduced,2,0.87723704866562,35,126
+vision_resnet50_reduced,3,0.7212276214833759,34,126
+vision_resnet50_reduced,4,0.883127572016461,45,126
+vision_resnet50_reduced,5,0.9291666666666666,6,126
+vision_resnet50_topvar512,1,0.9069444444444444,6,126
+vision_resnet50_topvar512,2,0.8609105180533752,35,126
+vision_resnet50_topvar512,3,0.7033248081841432,34,126
+vision_resnet50_topvar512,4,0.8790123456790123,45,126
+vision_resnet50_topvar512,5,0.9041666666666667,6,126

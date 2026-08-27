@@ -1,0 +1,37 @@
+{
+  "script": "model_vision.py",
+  "tag": "radimagenet_official",
+  "seed": 4321,
+  "cb_params": {
+    "depth": 2,
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 1,
+    "iterations": 223,
+    "loss_function": "MultiClass",
+    "random_seed": 4321,
+    "verbose": false,
+    "allow_writing_files": false
+  },
+  "n_rows": 630,
+  "n_resnet_features": 2048,
+  "elapsed_sec": 25.29,
+  "platform": "Windows-11-10.0.22631-SP0",
+  "python": "3.12.6",
+  "inputs_md5": {
+    "assignments.csv": "1b96e26001bf9699f1c34ea46c0898c0",
+    "radimagenet_features.csv": "cae8550b634c45ef4e057057a55fd4bf"
+  },
+  "performance_summary": {
+    "vision_radimagenet_official_reduced": 0.8740116654586743,
+    "vision_radimagenet_official_topvar512": 0.8682501174492947,
+    "3D_primary_ref": 0.9363060656085932,
+    "2D_midsagittal_ref": 0.916072543886046,
+    "simple_best_single_ref": 0.7599459006457917
+  },
+  "timestamp": "2026-08-27T06:15:38",
+  "primary_config_note": "vision_radimagenet_official_reduced is the pre-specified report arm",
+  "outputs": {
+    "performance": "revision\\results\\05_compare_cnn\\radimagenet_vs_radiomics.csv",
+    "predictions": "revision\\results\\05_compare_cnn\\radimagenet_test_predictions.csv"
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "script": "audit_radimagenet_weights.py",
+  "purpose": "provenance check of the RadImageNet ResNet50 checkpoint",
+  "timestamp": "2026-08-27T06:02:46",
+  "checkpoints": {
+    "lab_rasool": {
+      "path": "revision/results/05_compare_cnn/weights/ResNet50.pt",
+      "sha256": "08629f7e7bd3e29b8ee9522ca3f65ce4d010a7ddf74f0ea3c7e3f3d0bbab0734",
+      "bytes": 94345733,
+      "n_keys": 318
+    },
+    "official_notop": {
+      "path": "revision/results/05_compare_cnn/weights/RadImageNet-ResNet50_notop.pth",
+      "sha256": "2457479b254569e5a81ba48fee6c5b2b84b7a729e507aaa2466101aedb8e5c37",
+      "bytes": 94465691,
+      "n_keys": 371
+    }
+  },
+  "A_lab_vs_official": {
+    "keys_lab_remapped": 318,
+    "keys_official": 371,
+    "keys_in_common": 318,
+    "identical_tensors": 0,
+    "shape_mismatches": 0,
+    "keys_only_in_official": 53,
+    "conv_bias_keys_only_in_official": 53,
+    "example_max_abs_diff": {
+      "conv1.weight": 1.424506,
+      "bn1.weight": 0.990538,
+      "bn1.bias": 1.831506,
+      "bn1.running_mean": 18.324736,
+      "bn1.running_var": 162.482101,
+      "bn1.num_batches_tracked": 96900.0
+    },
+    "num_batches_tracked_lab": 96900,
+    "num_batches_tracked_official": 0,
+    "bn1_running_var_mean_lab": 41.999969482421875,
+    "bn1_running_var_mean_official": 1.302026391029358,
+    "verdict": "Lab-Rasool ResNet50.pt shares ZERO tensors with the official RadImageNet release; it is an unverifiable third-party checkpoint, not the officially released weights."
+  },
+  "A_vs_torchvision_imagenet": {
+    "IMAGENET1K_V1": {
+      "lab_identical": 0,
+      "official_identical": 0
+    },
+    "IMAGENET1K_V2": {
+      "lab_identical": 0,
+      "official_identical": 0
+    }
+  },
+  "diagnostic_input": {
+    "n_patches": 36,
+    "shape": [
+      36,
+      3,
+      224,
+      224
+    ],
+    "pipeline": "identical to the ImageNet arm: best_lr_index slice, pad8 bbox, percentile[1,99]->[0,1], bilinear 224, 3-channel replicate, no flip",
+    "note": "labels and test-set performance are NOT used by this diagnostic"
+  },
+  "BC_preprocess_and_architecture_diagnostic": {
+    "official_notop::keras_v1": {
+      "load": {
+        "missing_non_fc": [],
+        "n_unexpected": 0
+      },
+      "rescale_0_1": {
+        "median_abs_log_var_ratio": 0.5052894949913025,
+        "implied_variance_fold_error": 1.6574652789101685,
+        "median_corr_obs_mean_vs_running_mean": 0.8202436878105979,
+        "n_bn_layers": 53
+      },
+      "imagenet_mean_std": {
+        "median_abs_log_var_ratio": 4.755932807922363,
+        "implied_variance_fold_error": 116.27206209485531,
+        "median_corr_obs_mean_vs_running_mean": 0.7060088652981185,
+        "n_bn_layers": 53
+      },
+      "caffe_bgr": {
+        "median_abs_log_var_ratio": 13.574943542480469,
+        "implied_variance_fold_error": 786181.9573184474,
+        "median_corr_obs_mean_vs_running_mean": 0.7033594224556947,
+        "n_bn_layers": 53
+      }
+    },
+    "official_notop::torchvision_v1p5": {
+      "load": {
+        "missing_non_fc": [],
+        "n_unexpected": 0
+      },
+      "rescale_0_1": {
+        "median_abs_log_var_ratio": 0.5365285873413086,
+        "implied_variance_fold_error": 1.7100602218341303,
+        "median_corr_obs_mean_vs_running_mean": 0.8080760440345346,
+        "n_bn_layers": 53
+      },
+      "imagenet_mean_std": {
+        "median_abs_log_var_ratio": 4.756103992462158,
+        "implied_variance_fold_error": 116.29196777802002,
+        "median_corr_obs_mean_vs_running_mean": 0.69532851390215,
+        "n_bn_layers": 53
+      },
+      "caffe_bgr": {
+        "median_abs_log_var_ratio": 13.574943542480469,
+        "implied_variance_fold_error": 786181.9573184474,
+        "median_corr_obs_mean_vs_running_mean": 0.6962838001512359,
+        "n_bn_layers": 53
+      }
+    },
+    "official_notop::torchvision_v1p5_BIASES_DROPPED": {
+      "load": {
+        "missing_non_fc": [],
+        "n_unexpected": 0
+      },
+      "n_conv_bias_silently_dropped": 53,
+      "rescale_0_1": {
+        "median_abs_log_var_ratio": 0.5497374534606934,
+        "implied_variance_fold_error": 1.732798018017743,
+        "median_corr_obs_mean_vs_running_mean": 0.8032330870864102,
+        "n_bn_layers": 53
+      },
+      "imagenet_mean_std": {
+        "median_abs_log_var_ratio": 4.755423545837402,
+        "implied_variance_fold_error": 116.21286421698693,
+        "median_corr_obs_mean_vs_running_mean": 0.6954890148850119,
+        "n_bn_layers": 53
+      },
+      "caffe_bgr": {
+        "median_abs_log_var_ratio": 13.57490348815918,
+        "implied_variance_fold_error": 786150.4679643839,
+        "median_corr_obs_mean_vs_running_mean": 0.6962840997383155,
+        "n_bn_layers": 53
+      }
+    },
+    "lab_rasool::torchvision_v1p5": {
+      "load": {
+        "missing_non_fc": [],
+        "n_unexpected": 0
+      },
+      "rescale_0_1": {
+        "median_abs_log_var_ratio": 1.0468196868896484,
+        "implied_variance_fold_error": 2.848577329140499,
+        "median_corr_obs_mean_vs_running_mean": 0.7321505877368952,
+        "n_bn_layers": 53
+      },
+      "imagenet_mean_std": {
+        "median_abs_log_var_ratio": 1.5850262641906738,
+        "implied_variance_fold_error": 4.879419530834751,
+        "median_corr_obs_mean_vs_running_mean": 0.7009923170889713,
+        "n_bn_layers": 53
+      },
+      "caffe_bgr": {
+        "median_abs_log_var_ratio": 12.039966583251953,
+        "implied_variance_fold_error": 169391.27986003482,
+        "median_corr_obs_mean_vs_running_mean": 0.5882277087402554,
+        "n_bn_layers": 53
+      }
+    }
+  },
+  "B_verdict": {
+    "pre_specified_rule": "pick the normalisation whose activation statistics agree with the checkpoint's stored BN running statistics; decided before any AUC",
+    "selected_preprocess_for_official_weights": "rescale_0_1",
+    "ranking": {
+      "rescale_0_1": 0.505,
+      "imagenet_mean_std": 4.756,
+      "caffe_bgr": 13.575
+    },
+    "preprocess_used_by_the_0p773_run": "imagenet_mean_std"
+  },
+  "C_verdict": {
+    "official_notop_has_conv_bias": 53,
+    "silently_dropped_if_loaded_into_torchvision": true,
+    "keras_resnet50_is_v1_stride_torchvision_is_v1p5": true,
+    "bn_diagnostic_cannot_separate_v1_from_v1p5": true,
+    "implication": "architecture must come from the Keras definition (or a Keras forward), not be guessed on the PyTorch side"
+  },
+  "elapsed_sec": 31.94,
+  "platform": "Windows-11-10.0.22631-SP0",
+  "python": "3.12.6",
+  "torch": "2.13.0+cpu"
+}

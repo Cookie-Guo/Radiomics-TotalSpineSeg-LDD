@@ -1,0 +1,26 @@
+{
+  "script": "extract_simple_features.py",
+  "seed": 4321,
+  "n_patients": 210,
+  "n_rows": 630,
+  "n_ok": 630,
+  "n_errors": 0,
+  "smoke": false,
+  "definitions": {
+    "dhi": "mean(ant/mid/post disc height) / mean(adjacent inter-disc VB gaps on mid-sagittal)",
+    "delta_peak_si": "hist_peak(disc) - hist_peak(CSF); Waldenberg 2018 operationalized",
+    "delta_peak_si_norm": "(peak_disc - peak_csf) / |peak_csf|",
+    "disc_csf_mean_ratio": "mean(disc) / mean(CSF)",
+    "sphericity_2d": "4*pi*area/perimeter^2 on mid-sagittal disc mask",
+    "csf_roi": "mid-sagittal SI band of disc, AP strip on low-column (posterior) side, >=P75",
+    "reference": "Waldenberg et al. Eur Spine J 2018;27:1042-1048"
+  },
+  "elapsed_sec": 30.69,
+  "platform": "Windows-11-10.0.22631-SP0",
+  "python": "3.12.6",
+  "inputs_md5": {
+    "assignments.csv": "1b96e26001bf9699f1c34ea46c0898c0",
+    "A2_acquisition_variants.csv": "e804b03081ba3d0f4be8b10f6818cabd"
+  },
+  "timestamp": "2026-08-12T03:25:26"
+}

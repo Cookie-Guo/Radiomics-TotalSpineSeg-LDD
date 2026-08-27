@@ -1,0 +1,91 @@
+{
+  "internal_refit_macro_AUC": 0.9363060656085933,
+  "official_primary_macro_AUC": 0.9363060656085932,
+  "spider": {
+    "macro_AUC": 0.8383007705350284,
+    "macro_AUC_ci": [
+      0.81580648380974,
+      0.8599506793254377
+    ],
+    "accuracy": 0.5360134003350083,
+    "kappa_quadratic": 0.7053117287262582,
+    "n_discs": 597,
+    "n_patients": 199,
+    "grade_n": {
+      "1": 52,
+      "2": 93,
+      "3": 191,
+      "4": 146,
+      "5": 115
+    },
+    "n_features_present": 517,
+    "n_features_missing": 0,
+    "missing_features_head": []
+  },
+  "delta_spider_minus_primary": -0.09800529507356481,
+  "shift_by_class_median_abs_z": [
+    {
+      "feature_class": "shape",
+      "median": 1.0634441808973496,
+      "mean": 1.1543703959440155,
+      "count": 7
+    },
+    {
+      "feature_class": "glrlm",
+      "median": 0.9940573575488257,
+      "mean": 1.0697414049546818,
+      "count": 36
+    },
+    {
+      "feature_class": "glcm",
+      "median": 0.8926289226286837,
+      "mean": 0.9296095681866396,
+      "count": 136
+    },
+    {
+      "feature_class": "gldm",
+      "median": 0.8686610728734612,
+      "mean": 0.9855894239794537,
+      "count": 93
+    },
+    {
+      "feature_class": "firstorder",
+      "median": 0.8495564382048407,
+      "mean": 11.033507206275003,
+      "count": 119
+    },
+    {
+      "feature_class": "glszm",
+      "median": 0.8467660235502341,
+      "mean": 0.9445164381435682,
+      "count": 126
+    }
+  ],
+  "strata": [
+    {
+      "config": "SPIDER_mfr=Philips",
+      "macro_AUC": 0.8209548071717103,
+      "n_test": 315
+    },
+    {
+      "config": "SPIDER_mfr=SIEMENS",
+      "macro_AUC": 0.8198494034626403,
+      "n_test": 282
+    },
+    {
+      "config": "SPIDER_field=1.5",
+      "macro_AUC": 0.8571894067249038,
+      "n_test": 309
+    },
+    {
+      "config": "SPIDER_field=3.0",
+      "macro_AUC": 0.8069431564307573,
+      "n_test": 288
+    }
+  ],
+  "what_this_is": "frozen 517 CatBoost applied to SPIDER expert-mask T2 L3-S1 discs",
+  "what_this_is_not": [
+    "TotalSpineSeg end-to-end external validation",
+    "new primary AUC"
+  ]
+}

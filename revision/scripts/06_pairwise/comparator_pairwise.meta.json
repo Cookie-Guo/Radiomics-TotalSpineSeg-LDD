@@ -1,0 +1,12 @@
+{
+  "script": "comparator_pairwise.py",
+  "seed": 4321,
+  "n_bootstrap": 1000,
+  "bootstrap": "paired unstratified disc-level; same indices across models",
+  "p_primary": "Wald 2*(1-Phi(|d|/SE))",
+  "outputs": [
+    "results/06_pairwise/legacy_cnn_resnet50_pairwise_auc.csv",
+    "results/06_pairwise/legacy_cnn_resnet50_vs_3d.csv",
+    "results/06_pairwise/legacy_cnn_resnet50_pairwise.meta.json"
+  ]
+}

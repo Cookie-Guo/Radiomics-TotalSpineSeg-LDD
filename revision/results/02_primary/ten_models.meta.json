@@ -1,0 +1,33 @@
+{
+  "script": "ten_models_unified.py",
+  "generated_at": "2026-08-12T03:03:20",
+  "python": "3.12.6",
+  "seed": 4321,
+  "n_bootstrap": 1000,
+  "n_features": 517,
+  "feature_list": "revision/results/02_primary/selected_features_3d.csv",
+  "split": "revision/splits/assignments.csv",
+  "cv_column": "cv_rep01",
+  "seconds": 982.1,
+  "models": [
+    "DecisionTree",
+    "RandomForest",
+    "XGBoost",
+    "Lasso",
+    "Ridge",
+    "NeuralNetwork",
+    "MultinomialLogistic",
+    "KNN",
+    "NaiveBayes",
+    "CatBoost"
+  ],
+  "has_xgboost": true,
+  "catboost_macro_AUC": 0.9363060656085933,
+  "primary_3d_macro_AUC": 0.9363060656085932,
+  "inputs_md5": {
+    "assignments.csv": "1b96e26001bf9699f1c34ea46c0898c0",
+    "selected_features_3d.csv": "de0546505bbf0f70027729548c1e20af",
+    "extracted_data.xlsx": "307fe79b0addf42d9ca70a69310d27b0"
+  },
+  "policy": "All 10 models share unified 517-feature reduction; CatBoost fixed to primary hyperparameters"
+}

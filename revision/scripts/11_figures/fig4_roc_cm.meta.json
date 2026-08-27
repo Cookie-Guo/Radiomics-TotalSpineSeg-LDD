@@ -1,0 +1,30 @@
+{
+  "script": "fig4_roc_cm.R",
+  "n_test": 126,
+  "auc_source": "02_primary/class_auc.csv (3D_primary)",
+  "pred_source": "02_primary/test_predictions_3d.csv",
+  "inputs_md5": {
+    "test_predictions_3d.csv": "0787bce2d89265337ae2f592a531dab1",
+    "class_auc.csv": "b5f9ba81ff82b307f9c7365725d1e774"
+  },
+  "script_md5": "1a9b1e5b2c61c6889adb2a782da0891d",
+  "grade_auc": {
+    "I": 0.943,
+    "II": 0.945,
+    "III": 0.876,
+    "IV": 0.939,
+    "V": 0.978
+  },
+  "cm_diag": {
+    "I": "1/6",
+    "II": "30/35",
+    "III": "24/34",
+    "IV": "36/45",
+    "V": "4/6"
+  },
+  "outputs": [
+    "figures/Figure4_CatBoost_ROC_CM.png",
+    "figures/Figure4_CatBoost_ROC_CM.pdf",
+    "figures/Figure4_CatBoost_ROC_CM.tiff"
+  ]
+}

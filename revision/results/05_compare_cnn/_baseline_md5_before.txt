@@ -1,0 +1,6 @@
+28dbe6535253fc67648d1399d4b23a27 *results/05_compare_cnn/imagenet_features.csv
+164c8b84881312bd4a67d55068fd9ab7 *results/05_compare_cnn/imagenet_vs_radiomics.csv
+b71c63bc7f039604c38a15931067de5b *obsolete_0.773_B3_radimagenet_features.csv
+e966a7fcaeefec3233a1ff802cd2c514 *obsolete_0.773_B3_radimagenet_vs_radiomics.csv
+911a911c4c2c013f70aba08afcd04cf9 *results/02_primary/primary_performance.csv
+1b96e26001bf9699f1c34ea46c0898c0 *splits/assignments.csv

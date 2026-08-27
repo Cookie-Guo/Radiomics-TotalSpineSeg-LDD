@@ -1,0 +1,25 @@
+{
+  "script": "extract_resnet50.py",
+  "seed": 4321,
+  "backbone": "torchvision resnet50 IMAGENET1K_V2",
+  "embedding_dim": 2048,
+  "out_size": 224,
+  "pad_voxels": 8,
+  "no_horizontal_flip": true,
+  "no_finetune": true,
+  "device": "cpu",
+  "n_patients": 210,
+  "n_rows": 630,
+  "n_ok": 630,
+  "n_errors": 0,
+  "smoke": false,
+  "elapsed_sec": 55.5,
+  "platform": "Windows-11-10.0.22631-SP0",
+  "python": "3.12.6",
+  "torch": "2.13.0+cpu",
+  "inputs_md5": {
+    "assignments.csv": "1b96e26001bf9699f1c34ea46c0898c0",
+    "A2_acquisition_variants.csv": "e804b03081ba3d0f4be8b10f6818cabd"
+  },
+  "timestamp": "2026-08-12T03:41:22"
+}

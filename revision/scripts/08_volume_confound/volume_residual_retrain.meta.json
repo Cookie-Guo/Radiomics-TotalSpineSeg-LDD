@@ -1,0 +1,6 @@
+{
+  "script": "volume_residual_retrain.py",
+  "purpose": "Sensitivity: CatBoost on 517 features residualized against MeshVolume (train-only OLS)",
+  "seed": 4321,
+  "does_not_replace_primary": true
+}

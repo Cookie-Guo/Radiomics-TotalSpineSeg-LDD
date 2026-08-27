@@ -1,0 +1,19 @@
+{
+  "source_repo": "https://github.com/BMEII-AI/RadImageNet",
+  "drive_file_id": "1UgYviv2K6QPM1SCexqqab5-yTgwoAFEc",
+  "zip_name": "RadImageNet_models-20230414T114049Z-001.zip",
+  "zip_bytes": 1821860458,
+  "zip_member": "RadImageNet_models/RadImageNet-ResNet50_notop.h5",
+  "extraction": "HTTP Range read of the ZIP central directory; only this member fetched",
+  "file": "revision/results/05_compare_cnn/weights/RadImageNet-ResNet50_notop.h5",
+  "bytes": 94852768,
+  "sha256": "1f1d1c9fe6ab6980daa5e528145fe0db249c55415f8b3e1f3e3b1624d184f159",
+  "crc32_verified": true,
+  "all_h5_members_in_zip": [
+    "RadImageNet_models/RadImageNet-DenseNet121_notop.h5",
+    "RadImageNet_models/RadImageNet-ResNet50_notop.h5",
+    "RadImageNet_models/RadImageNet-InceptionV3_notop.h5",
+    "RadImageNet_models/RadImageNet-IRV2_notop.h5"
+  ],
+  "timestamp": "2026-08-27T06:09:49"
+}

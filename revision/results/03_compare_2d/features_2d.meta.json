@@ -1,0 +1,45 @@
+{
+  "script": "extract_2d_features.py",
+  "generated_at": "2026-08-12T02:26:10",
+  "python": "3.10.20",
+  "pyradiomics": "v3.0.1",
+  "numpy": "1.26.4",
+  "SimpleITK": "2.5.6",
+  "seed": 4321,
+  "binWidth_calibration": {
+    "n_ok": 30,
+    "median_p1_p99_range_norm": 97.51243026335021,
+    "binWidth": 1.523631722864847,
+    "expected_bins_at_median": 64.0,
+    "normalizeScale": 100.0,
+    "target_bins": 64
+  },
+  "n_requested": 630,
+  "n_success": 630,
+  "n_error": 0,
+  "n_features_per_disc_median": 1209.0,
+  "seconds": 237.1,
+  "inputs": {
+    "assignments.csv": "1b96e26001bf9699f1c34ea46c0898c0",
+    "A2_acquisition_variants.csv": "e804b03081ba3d0f4be8b10f6818cabd"
+  },
+  "settings_note": {
+    "force2D": true,
+    "resampledPixelSpacing": null,
+    "normalizeScale": 100,
+    "image_types": [
+      "Original",
+      "LoG",
+      "Wavelet",
+      "Square",
+      "SquareRoot",
+      "Logarithm",
+      "Exponential",
+      "Gradient"
+    ],
+    "skipped": [
+      "LBP3D"
+    ]
+  },
+  "smoke": false
+}

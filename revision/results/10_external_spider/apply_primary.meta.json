@@ -1,0 +1,17 @@
+{
+  "script": "apply_primary.py",
+  "generated_at": "2026-08-13T05:51:50",
+  "python": "3.12.6",
+  "seed": 4321,
+  "seconds": 39.1,
+  "catboost_params": {
+    "depth": 2,
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 1,
+    "iterations": 223,
+    "loss_function": "MultiClass",
+    "random_seed": 4321,
+    "verbose": false,
+    "allow_writing_files": false
+  }
+}

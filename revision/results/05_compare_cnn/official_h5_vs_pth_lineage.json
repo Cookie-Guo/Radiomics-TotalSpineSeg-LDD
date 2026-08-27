@@ -1,0 +1,11 @@
+{
+  "keras_weight_tensors": 318,
+  "torch_tensors": 371,
+  "torch_minus_keras": 53,
+  "torch_extra_are_num_batches_tracked": 53,
+  "tensors_with_an_exact_match_in_pth": 318,
+  "tensors_without_exact_match": 0,
+  "worst_max_abs_diff": 0.0,
+  "unmatched_details": [],
+  "verdict": "official .h5 and local .pth are the SAME weights (bit-exact); the PyTorch port is faithful"
+}

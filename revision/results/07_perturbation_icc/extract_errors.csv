@@ -1,0 +1,2 @@
+disc_id,condition,error
+P045_L5-S1,erode1,"mask has too few dimensions (number of dimensions 1, minimum required 2)"

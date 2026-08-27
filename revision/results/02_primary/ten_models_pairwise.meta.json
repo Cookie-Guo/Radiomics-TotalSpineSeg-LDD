@@ -1,0 +1,37 @@
+{
+  "script": "ten_models_pairwise.py",
+  "generated_at": "2026-08-13T21:41:19",
+  "python": "3.12.6",
+  "seed": 4321,
+  "n_bootstrap": 1000,
+  "bootstrap": "paired unstratified disc-level; same indices across models",
+  "p_primary": "Wald 2*(1-Phi(|d|/SE)) matching original Bootstrap_*_Comparison.csv",
+  "p_secondary": "two-sided bootstrap tail 2*min(P(d<=0), P(d>=0))",
+  "metric_auc": "one-vs-rest macro AUC (same as primary 0.936)",
+  "n_test": 126,
+  "seconds": 83.1,
+  "auc_tied_with_catboost_p_ge_0.05": [
+    "CatBoost",
+    "RandomForest"
+  ],
+  "auc_significantly_different_from_catboost": [
+    "NaiveBayes",
+    "XGBoost",
+    "NeuralNetwork",
+    "Ridge",
+    "KNN",
+    "MultinomialLogistic",
+    "Lasso",
+    "DecisionTree"
+  ],
+  "auc_point_estimate_higher_than_catboost": [
+    "RandomForest"
+  ],
+  "catboost_macro_AUC": 0.9363060656085933,
+  "rf_macro_AUC": 0.9414385957185081,
+  "inputs_md5": {
+    "assignments.csv": "1b96e26001bf9699f1c34ea46c0898c0",
+    "selected_features_3d.csv": "de0546505bbf0f70027729548c1e20af",
+    "extracted_data.xlsx": "307fe79b0addf42d9ca70a69310d27b0"
+  }
+}

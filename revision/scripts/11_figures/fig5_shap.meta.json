@@ -1,0 +1,22 @@
+{
+  "script": "fig5_shap.R",
+  "source": "results/09_interpretability/shap_mean_abs.csv",
+  "n_discs": 630,
+  "top_n": 8,
+  "layout": "2x3 grades I-V + global",
+  "global_top4": [
+    "log-sigma-3-0-mm-3D_glcm_Imc2",
+    "lbp-3D-m2_firstorder_Variance",
+    "log-sigma-4-0-mm-3D_firstorder_Minimum",
+    "original_shape_Flatness"
+  ],
+  "inputs_md5": {
+    "shap_mean_abs.csv": "beab0fc1822703f4cf409aadc7823cb1"
+  },
+  "script_md5": "6c4cf4340b62a534600f3e5e94e82df5",
+  "outputs": [
+    "figures/Figure5_Importance_Combined.png",
+    "figures/Figure5_Importance_Combined.pdf",
+    "figures/Figure5_Importance_Combined.tiff"
+  ]
+}

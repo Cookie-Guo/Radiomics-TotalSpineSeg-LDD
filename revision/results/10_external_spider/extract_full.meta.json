@@ -1,0 +1,29 @@
+{
+  "script": "extract.py",
+  "generated_at": "2026-08-13T05:51:02",
+  "python": "3.10.20",
+  "radiomics": "v3.0.1",
+  "smoke": false,
+  "n_ok": 597,
+  "n_fail": 0,
+  "n_features": 1874,
+  "seconds": 634.5,
+  "alignment": {
+    "n_selected_517": 517,
+    "n_extracted": 1874,
+    "n_present": 517,
+    "n_missing": 0,
+    "frac_present": 1.0,
+    "missing_head": [],
+    "n_extra": 1357
+  },
+  "params": {
+    "normalizeScale": 200,
+    "resampledPixelSpacing": [
+      3,
+      3,
+      3
+    ],
+    "binWidth": 5
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "script": "fig3_ten_models.R",
+  "seed": 4321,
+  "n_bootstrap": 1000,
+  "bootstrap": "unstratified percentile 2.5/97.5",
+  "y_axis": "0-1 fixed all six panels",
+  "model_order": "CatBoost first (pre-specified), then remaining by official macro AUC",
+  "official_metrics": [
+    "AUC",
+    "Accuracy",
+    "Sensitivity",
+    "Specificity"
+  ],
+  "derived_metrics": [
+    "F1",
+    "Precision"
+  ],
+  "inputs_md5": {
+    "ten_models_test_performance.csv": "f0ddd11598742a2ab095acaf1fe486db",
+    "ten_models_test_predictions.csv": "e5de3137acb2c7dde83e723577c4f756"
+  },
+  "script_md5": "c78a8bcd2b81614a4731298f839781c1",
+  "outputs": [
+    "results/11_figures/fig3_metrics_long.csv",
+    "figures/Figure3_Model_Performance_by_Metric.png",
+    "figures/Figure3_Model_Performance_by_Metric.pdf",
+    "figures/Figure3_Model_Performance_by_Metric.tiff"
+  ]
+}

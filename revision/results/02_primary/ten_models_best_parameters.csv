@@ -1,0 +1,28 @@
+Model,Parameter,Value
+DecisionTree,ccp_alpha,0.05
+DecisionTree,cv_macro_AUC,0.8420462095672171
+RandomForest,max_features,10
+RandomForest,cv_macro_AUC,0.9375259088174384
+XGBoost,max_depth,4
+XGBoost,learning_rate,0.05
+XGBoost,n_estimators,300
+XGBoost,cv_macro_AUC,0.9223034020568234
+XGBoost,label_coding,0..4 for grades 1..5
+Lasso,lambda,1.0
+Lasso,cv_macro_AUC,0.8984487743622799
+Ridge,lambda,10.0
+Ridge,cv_macro_AUC,0.9180043152282075
+NeuralNetwork,size,20
+NeuralNetwork,decay,0.01
+NeuralNetwork,cv_macro_AUC,0.8882504100147937
+MultinomialLogistic,decay,1.0
+MultinomialLogistic,cv_macro_AUC,0.9056082753893202
+KNN,k,11
+KNN,cv_macro_AUC,0.8978819634502131
+NaiveBayes,var_smoothing,1e-06
+NaiveBayes,cv_macro_AUC,0.8985567665008467
+CatBoost,depth,2
+CatBoost,learning_rate,0.05
+CatBoost,l2_leaf_reg,1
+CatBoost,iterations,223
+CatBoost,note,fixed to match primary_unified

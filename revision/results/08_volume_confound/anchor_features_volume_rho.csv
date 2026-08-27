@@ -1,0 +1,9 @@
+feature,in_primary_517,importance_rank,importance,spearman_rho_vs_volume,abs_rho_vs_volume,still_high_importance,note
+original_shape_MeshVolume,False,,,1.0,1.0,False,volume itself (reference; excluded from feature–volume table)
+original_shape_Sphericity,True,30.0,1.0301130219656107,0.1539640514126549,0.1539640514126549,False,
+original_shape_Flatness,True,2.0,3.555861898259201,0.21755024415183044,0.21755024415183044,True,
+original_shape_SurfaceArea,True,44.0,0.6603189621583317,0.8156206052508417,0.8156206052508417,False,
+original_shape_MajorAxisLength,True,36.0,0.8312871808392327,0.6520869087966975,0.6520869087966975,False,
+original_shape_LeastAxisLength,True,501.0,0.0,0.695567174338759,0.695567174338759,False,
+original_shape_Elongation,True,137.0,0.13771871953201323,0.13105772245788988,0.13105772245788988,False,
+original_shape_Maximum2DDiameterColumn,True,318.0,0.0,0.6998618359065559,0.6998618359065559,False,

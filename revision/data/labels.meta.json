@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-08-04T03:08:40",
+  "script": "make_labels.py",
+  "seed": null,
+  "seed_reason": "deterministic; no random component",
+  "python": "3.12.6",
+  "pandas": "2.2.3",
+  "numpy": "2.1.1",
+  "id_rule": "sequential anonymous identifiers",
+  "level_map": {
+    "L3-4": "L3-L4",
+    "L4-5": "L4-L5",
+    "L5-S1": "L5-S1"
+  },
+  "anomalies": [
+    {
+      "orig_mask_anonymized": "P108_T2",
+      "patient_id": "P108",
+      "orig_level_token": "T2",
+      "assigned_level": "L5-S1",
+      "inference_basis": "The other two discs for this patient are L3-4 and L4-5. Cohort counts are L3-4=210, L4-5=210, L5-S1=209, T2=1; the T2 token was assigned L5-S1 by exclusion.",
+      "evidence_type": "inferred by exclusion, not a direct label"
+    }
+  ],
+  "n_discs": 630,
+  "n_patients": 210,
+  "original_split": {
+    "train": 504,
+    "test": 126,
+    "patients_spanning_both_sets": 90,
+    "patients_total": 210
+  },
+  "inputs": {
+    "extracted_data.xlsx": {
+      "md5": "307fe79b0addf42d9ca70a69310d27b0"
+    },
+    "data.train.xlsx": {
+      "md5": "a137e69786edeae73157bd289ff7c3a6"
+    },
+    "data.test.xlsx": {
+      "md5": "effcf8179c4e7d209949b2086a2939e7"
+    }
+  },
+  "phi_note": "The name-to-ID map is held offline and is not published."
+}

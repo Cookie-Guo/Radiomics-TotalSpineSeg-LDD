@@ -1,0 +1,21 @@
+{
+  "script": "volume_residual_retrain.py",
+  "generated_at": "2026-08-14T02:37:19",
+  "python": "3.12.6",
+  "seed": 4321,
+  "volume": "original_shape_MeshVolume",
+  "residualization": "OLS feature ~ MeshVolume, coefficients from train only",
+  "role": "sensitivity; does not replace primary 0.936",
+  "n_features_input": 517,
+  "n_features_after_residual": 517,
+  "unadjusted_macro_AUC": 0.9363060656085933,
+  "residual_macro_AUC": 0.9242346997706001,
+  "primary_3d_macro_AUC": 0.9363060656085932,
+  "seconds": 28.9,
+  "inputs_md5": {
+    "assignments.csv": "1b96e26001bf9699f1c34ea46c0898c0",
+    "selected_features_3d.csv": "de0546505bbf0f70027729548c1e20af",
+    "extracted_data.xlsx": "307fe79b0addf42d9ca70a69310d27b0",
+    "labels.csv": "cad9b15fc67cef8f8dab3360d8cf3409"
+  }
+}
